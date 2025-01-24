@@ -6,6 +6,7 @@
             <GalleryBtn />
             <GalleryInput />
             <GalleryTab />
+            <Sections />
         </div>
     </div>
 </template>
@@ -15,6 +16,7 @@ import DesignSystem from './DesignSystem.vue';
 import GalleryBtn from './GalleryBtn.vue';
 import GalleryInput from './GalleryInput.vue';
 import GalleryTab from './GalleryTab.vue';
+import Sections from './Sections.vue';
 import Usage from './Usage.vue';
 
 export default {
@@ -24,6 +26,7 @@ export default {
         GalleryBtn,
         GalleryInput,
         GalleryTab,
+        Sections,
         Usage,
     }
 

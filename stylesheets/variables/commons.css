@@ -18,6 +18,11 @@
     --input-size-smaller: var(--sp2);
     --input-size-large: var(--sp5);
     --input-size-larger: var(--sp6);
+    
+    --image-size: var(--sp24);
+    --image-size-small: var(--sp16);
+    --image-size-large: var(--sp32);
+    --image-size-larger: var(--sp48);
 }
 
 .theme-dark {

@@ -17,4 +17,5 @@
     --sp16: calc(16 * var(--sp));
     --sp24: calc(24 * var(--sp));
     --sp32: calc(32 * var(--sp));
+    --sp48: calc(48 * var(--sp));
 }
