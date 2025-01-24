@@ -5,6 +5,7 @@ import HStack from './HStack.vue';
 import Image from './Image.vue';
 import InputBase from './InputBase.vue';
 import InputText from './InputText.vue';
+import Link from './Link.vue';
 import Sizer from './Sizer.vue';
 import Tab from './Tab.vue';
 import TabCap from './TabCap.vue';
@@ -20,6 +21,7 @@ export {
     Image,
     InputBase,
     InputText,
+    Link,
     Sizer,
     Tab,
     TabCap,

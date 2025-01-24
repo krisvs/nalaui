@@ -1,13 +1,13 @@
 <template>
-    <section 
+    <section
         class="Hero"
         :style="{
             backgroundImage: `url(${backgroundImg})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
         }">
-        <div class="Hero-overlay"></div>
-        
+        <div class="Hero-overlay" />
+
         <div class="Hero-content">
             <BlockTitleText
                 :title="title"
@@ -16,7 +16,7 @@
                 align="center" />
         </div>
 
-        <img 
+        <img
             v-if="overlayImg"
             class="Hero-overlayImg"
             :src="overlayImg"
@@ -32,8 +32,8 @@ export default {
         backgroundImg: { type: String, required: true },
         overlayImg: { type: String, required: false },
         overlayImgAlt: { type: String, required: false },
-        kind: { 
-            type: String, 
+        kind: {
+            type: String,
             default: 'primary',
             validator: value => ['default', 'primary', 'secondary', 'tertiary'].includes(value)
         }

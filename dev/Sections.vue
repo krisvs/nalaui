@@ -28,12 +28,40 @@
                 overlayImg="dev/assets/img/logo.png"
                 overlayImgAlt="Overlay Logo"
                 kind="primary" />
+            <SectionFooterLinks
+                imgSrc="dev/assets/img/logo.png"
+                imgAlt="Waggy Shepherds"
+                imgSize="large"
+                align="center"
+                :pageLinks="pageLinks"
+                :legalLinks="legalLinks" />
         </VGroup>
     </div>
 </template>
 
 <script>
 export default {
+    data() {
+        return {
+            pageLinks: [
+                {
+                    href: 'https://www.instagram.com/waggyshepherds/',
+                    label: 'About'
+                },
+                {
+                    href: 'https://www.youtube.com/waggyshepherds/',
+                    label: 'Blog'
+                },
+            ],
+            legalLinks: [
+                {
+                    href: 'https://www.instagram.com/waggyshepherds/',
+                    label: 'Instagram'
+                },
+            ],
+        };
+    },
+
     methods: {
         onSubscribe(email) {
             console.info('Subscribe:', email);

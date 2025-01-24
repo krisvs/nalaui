@@ -1,9 +1,9 @@
 import SectionAboutText from './SectionAboutText.vue';
-import SectionNewsletter from './SectionNewsletter.vue';
+import SectionFooterLinks from './SectionFooterLinks.vue';
 import SectionHero from './SectionHero.vue';
-
+import SectionNewsletter from './SectionNewsletter.vue';
 export {
     SectionAboutText,
-    SectionNewsletter,
-    SectionHero
-};
+    SectionFooterLinks,
+    SectionHero,
+    SectionNewsletter };

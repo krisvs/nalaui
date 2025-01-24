@@ -39,7 +39,7 @@ export default {
 }
 
 .Container {
-    max-width: 640px;
+    max-width: var(--container-width);
     margin: var(--sp4) auto;
 }
 </style>
