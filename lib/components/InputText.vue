@@ -6,20 +6,23 @@
             ...$props
         }">
         <slot name="before" />
-        <input
-            ref="input"
-            :value="modelValue"
-            :type="type"
-            :placeholder="placeholder"
-            :readonly="readonly"
-            :disabled="disabled"
-            :min="min"
-            :max="max"
-            :step="step"
-            autocomplete="off"
-            @input="onInput($event)"
-            @focus="$emit('focus', $event)"
-            @blur="$emit('blur', $event)" />
+        <div class="InputText-wrapper">
+            <input
+                ref="input"
+                :value="modelValue"
+                :type="type"
+                :placeholder="placeholder"
+                :readonly="readonly"
+                :disabled="disabled"
+                :min="min"
+                :max="max"
+                :step="step"
+                autocomplete="off"
+                @input="onInput($event)"
+                @focus="$emit('focus', $event)"
+                @blur="$emit('blur', $event)" />
+            <i v-if="icon" :class="icon" class="InputText-icon" />
+        </div>
         <slot name="after" />
     </InputBase>
 </template>
@@ -39,6 +42,7 @@ export default {
         step: { type: Number },
         autoFocus: { type: Boolean },
         readonly: { type: Boolean },
+        icon: { type: String },
     },
 
     emits: [
@@ -70,6 +74,20 @@ export default {
     --InputBase-padding: var(--sp1-5);
 }
 
+.InputText-wrapper {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.InputText-icon {
+    position: absolute;
+    left: var(--sp0-5);
+    color: var(--color-text-subtle);
+    pointer-events: none;
+}
+
 input, textarea {
     -webkit-appearance: none;
     box-sizing: border-box;
@@ -84,5 +102,6 @@ input, textarea {
     color: inherit;
     font: inherit;
     cursor: inherit;
+    padding-left: var(--sp4);
 }
 </style>

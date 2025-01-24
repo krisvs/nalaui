@@ -21,6 +21,7 @@
     
     --image-size: var(--sp24);
     --image-size-small: var(--sp16);
+    --image-size-smaller: var(--sp12);
     --image-size-large: var(--sp32);
     --image-size-larger: var(--sp48);
 }

@@ -18,9 +18,11 @@
                 text="Sushi and Manju are two adorable dogs on a mission to explore the great outdoors. Their incredible journey through forests, meadows, and mountains, captured in stunning photography, will leave you breathless and inspired." />
             <SectionNewsletter
                 title="Join the Pack!"
-                background="tertiary"
                 text="Stay updated on Sushi and Manju's latest adventures and get exclusive content delivered right to your inbox. Hurry, adventure awaits! Sign up now!"
-                imgSrc="dev/assets/img/image.png" />
+                imgSrc="dev/assets/img/image.png"
+                imgAlt="Sushi and Manju"
+                align="center"
+                :onSubscribe="onSubscribe" />
         </VGroup>
 
     </div>
@@ -28,7 +30,11 @@
 
 <script>
 export default {
-
+    methods: {
+        onSubscribe(email) {
+            console.info('Subscribe:', email);
+        }
+    }
 };
 </script>
 

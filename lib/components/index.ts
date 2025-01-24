@@ -2,6 +2,7 @@ import Btn from './Btn.vue';
 import Circle from './Circle.vue';
 import HGroup from './HGroup.vue';
 import HStack from './HStack.vue';
+import Image from './Image.vue';
 import InputBase from './InputBase.vue';
 import InputText from './InputText.vue';
 import Sizer from './Sizer.vue';
@@ -16,6 +17,7 @@ export {
     Circle,
     HGroup,
     HStack,
+    Image,
     InputBase,
     InputText,
     Sizer,
