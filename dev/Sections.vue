@@ -23,8 +23,12 @@
                 imgAlt="Sushi and Manju"
                 align="center"
                 :onSubscribe="onSubscribe" />
+            <SectionHero
+                backgroundImg="dev/assets/img/hero.jpg"
+                overlayImg="dev/assets/img/logo.png"
+                overlayImgAlt="Overlay Logo"
+                kind="primary" />
         </VGroup>
-
     </div>
 </template>
 
