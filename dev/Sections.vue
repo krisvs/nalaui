@@ -14,8 +14,11 @@
                 backgroundImg="dev/assets/img/hero.jpg"
                 imgSrc="dev/assets/img/logo.png"
                 imgAlt="Overlay Logo"
-                height="60vh"
-                align="center"
+                height="50vh"
+                opacity="0.25"
+                alignImg="center"
+                alignText="center"
+                title="Waggy Shepherds"
                 kind="primary" />
             <SectionAboutText
                 title="Sushi and Manju"

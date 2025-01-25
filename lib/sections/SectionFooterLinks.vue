@@ -2,6 +2,7 @@
     <section class="FooterLinks">
         <HGroup
             justify="center"
+            wrap="true"
             class="FooterLinks-layout">
             <div class="Column Column-Links">
                 <BlockLinkStack
@@ -47,6 +48,7 @@ export default {
 </script>
 
 <style scoped>
+
 .FooterLinks-layout {
     --column-Links: 0 0 128px;
     --column-Image: 0 0 auto;

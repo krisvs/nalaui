@@ -8,9 +8,11 @@
     --font-size-smaller: 12px;
     --font-size-large: 18px;
     --font-size-larger: 20px;
+    --font-size-headline: 42px;
 
     --font-weight: 400;
     --font-weight-bold: 500;
+    --font-weight-boldest: 800;
 
     --line-height: 1.5em;
 }

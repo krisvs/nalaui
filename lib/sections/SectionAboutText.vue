@@ -4,7 +4,7 @@
         :class="[
             `Background--${background}`,
         ]">
-        <BlockTitleText
+        <BlockTitleContent
             :title="title"
             :text="text"
             :kind="kind"

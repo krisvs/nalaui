@@ -7,27 +7,30 @@
             backgroundPosition: 'center',
             minHeight: height
         }">
-        <div class="Hero-overlay" />
+        <div
+            class="Hero-overlay"
+            :style="{
+                opacity: opacity
+            }" />
 
         <div class="Hero-content">
-            <BlockTitleText
-                v-if="title || text"
-                :title="title"
-                :text="text"
-                :kind="kind"
-                align="center" />
+            <h1
+                class="Headline"
+                :class="`Headline-align--${alignText}`">
+                {{ title }}
+            </h1>
         </div>
 
         <div
             v-if="imgSrc"
             class="Hero-overlayImgWrapper"
-            :class="`Hero-overlayImgWrapper--${align}`">
+            :class="`Hero-overlayImgWrapper--${alignImg}`">
             <Image
                 class="Hero-overlayImg"
                 :src="imgSrc"
                 :alt="imgAlt"
                 :size="imgSize"
-                :align="align"
+                :align="alignImg"
                 :hoverPop="true" />
         </div>
     </section>
@@ -42,12 +45,21 @@ export default {
         backgroundImg: { type: String, required: true },
         imgSrc: { type: String, required: false },
         imgAlt: { type: String, required: false },
+        opacity: {
+            type: Number,
+            default: 0.4,
+            validator: value => value >= 0 && value <= 1
+        },
         height: {
             type: String,
             default: '100vh',
             validator: value => /^[0-9]+(px|vh|rem|em|%)$/.test(value)
         },
-        align: {
+        alignImg: { type: String,
+            default: 'center',
+            validator: value => ['start', 'center', 'end'].includes(value)
+        },
+        alignText: {
             type: String,
             default: 'center',
             validator: value => ['start', 'center', 'end'].includes(value)
@@ -75,15 +87,21 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
 }
 
 .Hero-content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    padding: var(--sp3);
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+
+.Headline {
+    font-size: var(--font-size-headline);
+    font-weight: var(--font-weight-boldest);
+    color: var(--color-default);
+    padding: var(--sp2);
 }
 
 .Hero-overlayImgWrapper {
@@ -98,16 +116,14 @@ export default {
     padding: 0 var(--sp3);
 }
 
-.Hero-overlayImgWrapper--start {
-    justify-content: flex-start;
-}
+.Hero-overlayImgWrapper--start { justify-content: flex-start; }
+.Hero-overlayImgWrapper--center { justify-content: center; }
+.Hero-overlayImgWrapper--end { justify-content: flex-end; }
 
-.Hero-overlayImgWrapper--center {
-    justify-content: center;
+.Headline-align--start { text-align: start; }
+.Headline-align--center {
+    text-align: center;
+    margin-top: var(--sp24);
 }
-
-.Hero-overlayImgWrapper--end {
-    justify-content: flex-end;
-}
-
+.Headline-align--end { text-align: end; }
 </style>

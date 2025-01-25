@@ -1,8 +1,8 @@
 <template>
-    <VGroup
+    <div
         class="LinkStack"
         :class="[
-            `LinkStack-align--${align}`,
+            `LinkStack-align--${align}`
         ]">
         <Link
             v-for="link, idx in links"
@@ -10,14 +10,13 @@
             :kindHover="kindHover"
             :href="link.href"
             :label="link.label" />
-    </VGroup>
+    </div>
 </template>
 
 <script>
 export default {
     props: {
         links: { type: Array, required: true },
-        kindHover: { type: String, required: false },
         align: {
             type: String,
             default: 'start',
@@ -28,6 +27,14 @@ export default {
 </script>
 
 <style scoped>
+/* Default state (desktop) */
+.LinkStack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp2);
+    width: 100%;
+}
+
 .LinkStack-align--start {
     align-items: flex-start;
     text-align: start;
@@ -41,5 +48,23 @@ export default {
 .LinkStack-align--end {
     align-items: flex-end;
     text-align: end;
+}
+
+/* Mobile state */
+@media screen and (max-width: 420px) {
+    .LinkStack {
+        flex-direction: row !important;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--sp3);
+    }
+
+    .LinkStack-align--start,
+    .LinkStack-align--center,
+    .LinkStack-align--end {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
 </style>

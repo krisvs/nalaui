@@ -4,12 +4,12 @@
         :class="[
             `Link-kindHover--${kindHover}`,
         ]"
-        :href="href">{{ label }}</a>
-
+        :href="href">
+        {{ label }}
+    </a>
 </template>
 
 <script>
-
 export default {
     props: {
         href: { type: String, required: true },
@@ -21,11 +21,9 @@ export default {
         }
     }
 };
-
 </script>
 
 <style>
-
 .Link:hover {
     color: var(--color-text-subtle);
     text-decoration: underline;
@@ -35,5 +33,4 @@ export default {
 .Link-kindHover--primary:hover { color: var(--color-primary); }
 .Link-kindHover--secondary:hover { color: var(--color-secondary); }
 .Link-kindHover--tertiary:hover { color: var(--color-tertiary); }
-
 </style>

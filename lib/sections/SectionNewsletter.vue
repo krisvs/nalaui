@@ -5,7 +5,6 @@
             `Background--${background}`,
         ]">
         <VGroup :align="align">
-
             <Image
                 v-if="imgSrc"
                 :src="imgSrc"
@@ -13,7 +12,7 @@
                 :size="imgSize"
                 :align="align" />
 
-            <BlockTitleText
+            <BlockTitleContent
                 :title="title"
                 :text="text"
                 :kind="kind"
