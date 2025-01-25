@@ -26,6 +26,8 @@
     --image-size-smaller: var(--sp12);
     --image-size-large: var(--sp32);
     --image-size-larger: var(--sp48);
+    
+    --image-hover-scale: 1.03;
 }
 
 .theme-dark {

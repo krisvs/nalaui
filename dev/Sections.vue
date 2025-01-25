@@ -9,7 +9,14 @@
             </div>
         </VGroup>
 
-        <VGroup>
+        <VGroup gap="0">
+            <SectionHero
+                backgroundImg="dev/assets/img/hero.jpg"
+                imgSrc="dev/assets/img/logo.png"
+                imgAlt="Overlay Logo"
+                height="60vh"
+                align="center"
+                kind="primary" />
             <SectionAboutText
                 title="Sushi and Manju"
                 align="start"
@@ -23,11 +30,6 @@
                 imgAlt="Sushi and Manju"
                 align="center"
                 :onSubscribe="onSubscribe" />
-            <SectionHero
-                backgroundImg="dev/assets/img/hero.jpg"
-                overlayImg="dev/assets/img/logo.png"
-                overlayImgAlt="Overlay Logo"
-                kind="primary" />
             <SectionFooterLinks
                 imgSrc="dev/assets/img/logo.png"
                 imgAlt="Waggy Shepherds"

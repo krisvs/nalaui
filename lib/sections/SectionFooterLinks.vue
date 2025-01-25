@@ -16,7 +16,8 @@
                     :src="imgSrc"
                     :alt="imgAlt"
                     :size="imgSize"
-                    :align="align" />
+                    :align="align"
+                    :hoverPop="true" />
             </div>
 
             <div class="Column Column-Links">

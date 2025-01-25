@@ -4,10 +4,12 @@
         class="Image"
         :class="[
             `Image-size-${size}`,
-            `Image-align--${align}`
+            `Image-align--${align}`,
+            { 'Image-hoverPop': hoverPop }
         ]"
         :src="src"
-        :alt="alt" />
+        :alt="alt"
+        :hoverPop="hoverPop" />
 
 </template>
 
@@ -25,7 +27,8 @@ export default {
             type: String,
             default: 'start',
             validator: value => ['start', 'center', 'end'].includes(value)
-        }
+        },
+        hoverPop: { type: Boolean, required: false, default: false }
     },
 };
 </script>
@@ -52,5 +55,12 @@ export default {
     margin-left: auto;
     margin-right: 0;
     display: block;
+}
+.Image-hoverPop:hover {
+    transform: scale(var(--image-hover-scale));
+}
+
+.Image {
+    transition: transform 0.2s ease-in-out;
 }
 </style>

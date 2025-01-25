@@ -4,7 +4,8 @@
         :style="{
             backgroundImage: `url(${backgroundImg})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center'
+            backgroundPosition: 'center',
+            minHeight: height
         }">
         <div class="Hero-overlay" />
 
@@ -17,22 +18,40 @@
                 align="center" />
         </div>
 
-        <img
-            v-if="overlayImg"
-            class="Hero-overlayImg"
-            :src="overlayImg"
-            :alt="overlayImgAlt || ''" />
+        <div
+            v-if="imgSrc"
+            class="Hero-overlayImgWrapper"
+            :class="`Hero-overlayImgWrapper--${align}`">
+            <Image
+                class="Hero-overlayImg"
+                :src="imgSrc"
+                :alt="imgAlt"
+                :size="imgSize"
+                :align="align"
+                :hoverPop="true" />
+        </div>
     </section>
 </template>
 
 <script>
+
 export default {
     props: {
         title: { type: String, required: false },
         text: { type: String, required: false, default: '' },
         backgroundImg: { type: String, required: true },
-        overlayImg: { type: String, required: false },
-        overlayImgAlt: { type: String, required: false },
+        imgSrc: { type: String, required: false },
+        imgAlt: { type: String, required: false },
+        height: {
+            type: String,
+            default: '100vh',
+            validator: value => /^[0-9]+(px|vh|rem|em|%)$/.test(value)
+        },
+        align: {
+            type: String,
+            default: 'center',
+            validator: value => ['start', 'center', 'end'].includes(value)
+        },
         kind: {
             type: String,
             default: 'primary',
@@ -45,7 +64,6 @@ export default {
 <style scoped>
 .Hero {
     position: relative;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,12 +86,28 @@ export default {
     padding: var(--sp3);
 }
 
-.Hero-overlayImg {
+.Hero-overlayImgWrapper {
     position: absolute;
-    bottom: var(--sp3);
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
     z-index: 2;
+    padding: 0 var(--sp3);
 }
+
+.Hero-overlayImgWrapper--start {
+    justify-content: flex-start;
+}
+
+.Hero-overlayImgWrapper--center {
+    justify-content: center;
+}
+
+.Hero-overlayImgWrapper--end {
+    justify-content: flex-end;
+}
+
 </style>
