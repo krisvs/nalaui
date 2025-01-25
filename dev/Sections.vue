@@ -31,7 +31,6 @@
             <SectionFooterLinks
                 imgSrc="dev/assets/img/logo.png"
                 imgAlt="Waggy Shepherds"
-                imgSize="large"
                 align="center"
                 :pageLinks="pageLinks"
                 :legalLinks="legalLinks"
