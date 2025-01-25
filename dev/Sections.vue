@@ -34,7 +34,8 @@
                 imgSize="large"
                 align="center"
                 :pageLinks="pageLinks"
-                :legalLinks="legalLinks" />
+                :legalLinks="legalLinks"
+                kindHover="primary" />
         </VGroup>
     </div>
 </template>
@@ -45,18 +46,30 @@ export default {
         return {
             pageLinks: [
                 {
-                    href: 'https://www.instagram.com/waggyshepherds/',
+                    href: 'https://waggyshepherds.com/about',
                     label: 'About'
                 },
                 {
-                    href: 'https://www.youtube.com/waggyshepherds/',
+                    href: 'https://waggyshepherds.com/blog',
                     label: 'Blog'
+                },
+                {
+                    href: 'https://waggyshepherds.com/gallery',
+                    label: 'Gallery'
                 },
             ],
             legalLinks: [
                 {
-                    href: 'https://www.instagram.com/waggyshepherds/',
-                    label: 'Instagram'
+                    href: 'https://waggyshepherds.com/terms',
+                    label: 'Terms of Use'
+                },
+                {
+                    href: 'https://waggyshepherds.com/privacy',
+                    label: 'Privacy Policy'
+                },
+                {
+                    href: 'https://waggyshepherds.com/cookies',
+                    label: 'Cookie Policy'
                 },
             ],
         };

@@ -41,15 +41,10 @@ export default {
     props: {
         title: { type: String, required: true },
         text: { type: String, required: true },
+        kind: { type: String, required: false, default: 'primary' },
         imgSrc: { type: String, required: false },
         imgAlt: { type: String, required: false },
-        kind: { type: String, required: false, default: 'primary' },
-        imgSize: {
-            type: String,
-            default: '',
-            required: false,
-            validator: value => ['small', 'smaller', 'large', 'larger'].includes(value)
-        },
+        imgSize: { type: String, required: false },
         align: {
             type: String,
             default: 'start',

@@ -5,7 +5,9 @@
             justify="center">
 
             <BlockLinkStack
-                :links="pageLinks" />
+                :links="pageLinks"
+                :align="align"
+                :kindHover="kindHover" />
 
             <Image
                 class="FooterImg"
@@ -15,7 +17,9 @@
                 :align="align" />
 
             <BlockLinkStack
-                :links="legalLinks" />
+                :links="legalLinks"
+                :align="align"
+                :kindHover="kindHover" />
         </HGroup>
 
     </section>
@@ -32,6 +36,7 @@ export default {
         align: { type: String, required: true },
         pageLinks: { type: Array, required: true },
         legalLinks: { type: Array, required: true },
+        kindHover: { type: String, required: false }
     }
 };
 

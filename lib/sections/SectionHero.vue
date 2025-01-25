@@ -10,6 +10,7 @@
 
         <div class="Hero-content">
             <BlockTitleText
+                v-if="title || text"
                 :title="title"
                 :text="text"
                 :kind="kind"
@@ -20,15 +21,15 @@
             v-if="overlayImg"
             class="Hero-overlayImg"
             :src="overlayImg"
-            :alt="overlayImgAlt" />
+            :alt="overlayImgAlt || ''" />
     </section>
 </template>
 
 <script>
 export default {
     props: {
-        title: { type: String, required: true },
-        text: { type: String, required: false },
+        title: { type: String, required: false },
+        text: { type: String, required: false, default: '' },
         backgroundImg: { type: String, required: true },
         overlayImg: { type: String, required: false },
         overlayImgAlt: { type: String, required: false },
