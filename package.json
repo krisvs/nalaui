@@ -1,7 +1,7 @@
 {
     "name": "manjui",
     "version": "1.0.0",
-    "description": "Vue UI library & design system",
+    "description": "Vue UI library & design system based on Nightshade UI (nightshade)",
     "type": "module",
     "exports": {
         ".": "./dist/bundle.js",
@@ -21,7 +21,7 @@
         "version": "npm run build",
         "postversion": "npm publish --access=public && git push --tags origin main"
     },
-    "author": "Christelle Van Sebroeck (based on work byBoris Okunskiy)",
+    "author": "Christelle Van Sebroeck based on work by Boris Okunskiy (@inca)",
     "license": "ISC",
     "peerDependencies": {
         "vue": "^3.5.13"

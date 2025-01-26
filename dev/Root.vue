@@ -40,6 +40,6 @@ export default {
 
 .Container {
     max-width: var(--container-width);
-    margin: var(--sp4) auto;
+    margin: 0 auto;
 }
 </style>

@@ -13,7 +13,7 @@
             <SectionHero
                 backgroundImg="dev/assets/img/hero.jpg"
                 imgSrc="dev/assets/img/logo.png"
-                imgAlt="Overlay Logo"
+                imgAlt="Overlay Waggy Shepherds Logo"
                 height="50vh"
                 opacity="0.25"
                 alignImg="center"
@@ -40,6 +40,12 @@
                 :pageLinks="pageLinks"
                 :legalLinks="legalLinks"
                 kindHover="primary" />
+            <SectionFooterEnd
+                imgSrc="dev/assets/img/mountains-light.png"
+                imgAlt="Waggy Shepherds Mountains"
+                imgSize="large"
+                alignImg="center"
+                :socialLinks="socialLinks" />
         </VGroup>
     </div>
 </template>
@@ -74,6 +80,18 @@ export default {
                 {
                     href: 'https://waggyshepherds.com/cookies',
                     label: 'Cookie Policy'
+                },
+            ],
+            socialLinks: [
+                {
+                    href: 'https://www.instagram.com/waggyshepherds/',
+                    alt: 'Waggy Shepherds Instagram channel',
+                    src: 'dev/assets/img/instagram.svg'
+                },
+                {
+                    href: 'https://www.youtube.com/@WaggyShepherds',
+                    alt: 'Waggy Shepherds YouTube Channel',
+                    src: 'dev/assets/img/youtube.svg'
                 },
             ],
         };

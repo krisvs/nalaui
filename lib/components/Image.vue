@@ -5,7 +5,10 @@
         :class="[
             `Image-size-${size}`,
             `Image-align--${align}`,
-            { 'Image-hoverPop': hoverPop }
+            {
+                'Image--hover': hover,
+                'Image--flip': flip
+            }
         ]"
         :src="src"
         :alt="alt"
@@ -21,13 +24,15 @@ export default {
         size: {
             type: String,
             default: 'medium',
-            validator: value => ['small', 'smaller', 'medium', 'large', 'larger'].includes(value)
+            validator: value => ['icon', 'small', 'smaller', 'medium', 'large', 'larger'].includes(value)
         },
         align: {
             type: String,
             default: 'start',
             validator: value => ['start', 'center', 'end'].includes(value)
         },
+        hover: { type: Boolean, default: false },
+        flip: { type: Boolean, default: false },
         hoverPop: { type: Boolean, required: false, default: false }
     },
 };
@@ -36,6 +41,7 @@ export default {
 <style scoped>
 .Image-size-medium { width: var(--image-size); }
 
+.Image-size-icon { width: var(--image-size-icon); }
 .Image-size-small { width: var(--image-size-small); }
 .Image-size-smaller { width: var(--image-size-smaller); }
 .Image-size-large { width: var(--image-size-large); }
@@ -62,5 +68,9 @@ export default {
 
 .Image {
     transition: transform 0.2s ease-in-out;
+}
+
+.Image--flip {
+    transform: scaleX(-1);
 }
 </style>
