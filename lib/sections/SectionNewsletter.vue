@@ -23,9 +23,10 @@
             <InputText
                 v-model="email"
                 class="InputText"
-
                 placeholder="Enter your email"
-                icon="fas fa-envelope" />
+                icon="fas fa-envelope"
+                iconSize="lg"
+                iconKind="primary" />
 
             <Btn
                 label="Subscribe"

@@ -8,6 +8,7 @@ import InputBase from './InputBase.vue';
 import InputText from './InputText.vue';
 import Link from './Link.vue';
 import Sizer from './Sizer.vue';
+import Subtitle from './Subtitle.vue';
 import Tab from './Tab.vue';
 import TabCap from './TabCap.vue';
 import Text from './Text.vue';
@@ -25,6 +26,7 @@ export {
     InputText,
     Link,
     Sizer,
+    Subtitle,
     Tab,
     TabCap,
     Text,

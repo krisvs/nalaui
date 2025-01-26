@@ -5,7 +5,7 @@
             wrap="true"
             class="FooterLinks-layout">
             <div class="Column Column-Links">
-                <BlockLinkStack
+                <BlockLinks
                     :links="pageLinks"
                     :align="align"
                     :kindHover="kindHover" />
@@ -22,7 +22,7 @@
             </div>
 
             <div class="Column Column-Links">
-                <BlockLinkStack
+                <BlockLinks
                     :links="legalLinks"
                     :align="align"
                     :kindHover="kindHover" />

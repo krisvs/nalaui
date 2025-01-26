@@ -7,6 +7,11 @@
         }">
         <slot name="before" />
         <div class="InputText-wrapper">
+            <Icon
+                v-if="icon"
+                :icon="icon"
+                :size="iconSize"
+                :kind="iconKind" />
             <input
                 ref="input"
                 :value="modelValue"
@@ -21,7 +26,6 @@
                 @input="onInput($event)"
                 @focus="$emit('focus', $event)"
                 @blur="$emit('blur', $event)" />
-            <i v-if="icon" :class="icon" class="InputText-icon" />
         </div>
         <slot name="after" />
     </InputBase>
@@ -42,7 +46,9 @@ export default {
         step: { type: Number },
         autoFocus: { type: Boolean },
         readonly: { type: Boolean },
-        icon: { type: String },
+        icon: { type: String, required: false },
+        iconSize: { type: String, required: false },
+        iconKind: { type: String, required: false },
     },
 
     emits: [
@@ -81,10 +87,8 @@ export default {
     align-items: center;
 }
 
-.InputText-icon {
-    position: absolute;
-    left: var(--sp0-5);
-    color: var(--color-text-subtle);
+.Icon {
+    padding: var(--sp0-5);
     pointer-events: none;
 }
 

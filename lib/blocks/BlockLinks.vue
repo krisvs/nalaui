@@ -2,7 +2,8 @@
     <div
         class="LinkStack"
         :class="[
-            `LinkStack-align--${align}`
+            `LinkStack-align--${align}`,
+            `LinkStack-direction--${direction}`
         ]">
         <Link
             v-for="link, idx in links"
@@ -17,6 +18,11 @@
 export default {
     props: {
         links: { type: Array, required: true },
+        direction: {
+            type: String,
+            default: 'column',
+            validator: value => ['column', 'row'].includes(value)
+        },
         align: {
             type: String,
             default: 'start',
@@ -30,10 +36,12 @@ export default {
 /* Default state (desktop) */
 .LinkStack {
     display: flex;
-    flex-direction: column;
     gap: var(--sp2);
     width: 100%;
 }
+
+.LinkStack-direction--row {  flex-direction: row; }
+.LinkStack-direction--column { flex-direction: column; }
 
 .LinkStack-align--start {
     align-items: flex-start;

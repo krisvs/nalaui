@@ -24,12 +24,16 @@
     --input-size-larger: var(--sp6);
     
     --image-size: var(--sp24);
-    --image-size-small: var(--sp16);
+    --image-size-icon: var(--sp4);
+
+    --image-size-smallest: var(--sp8);
     --image-size-smaller: var(--sp12);
-    --image-size-icon: var(--sp3);
-    --image-size-large: var(--sp32);
-    --image-size-larger: var(--sp48);
+    --image-size-small: var(--sp16);
     
+    --image-size-large: var(--sp24);
+    --image-size-larger: var(--sp36);
+    --image-size-largest: var(--sp48);
+
     --image-hover-scale: 1.03;
 }
 

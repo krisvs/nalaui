@@ -4,7 +4,7 @@
         :class="[
             `Icon--${kind}`,
             icon,
-            size ? `fa-${size}` : '' // Append size class like 'fa-lg'
+            size ? `fa-${size}` : ''
         ]" />
 </template>
 

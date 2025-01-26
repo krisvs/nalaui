@@ -24,7 +24,7 @@ export default {
         size: {
             type: String,
             default: 'medium',
-            validator: value => ['icon', 'small', 'smaller', 'medium', 'large', 'larger'].includes(value)
+            validator: value => ['icon', 'smallest', 'smaller', 'small', 'medium', 'large', 'larger', 'largest'].includes(value)
         },
         align: {
             type: String,
@@ -42,11 +42,12 @@ export default {
 .Image-size-medium { width: var(--image-size); }
 
 .Image-size-icon { width: var(--image-size-icon); }
-.Image-size-small { width: var(--image-size-small); }
+.Image-size-smallest { width: var(--image-size-smallest); }
 .Image-size-smaller { width: var(--image-size-smaller); }
+.Image-size-small { width: var(--image-size-small); }
 .Image-size-large { width: var(--image-size-large); }
 .Image-size-larger { width: var(--image-size-larger); }
-
+.Image-size-largest { width: var(--image-size-largest); }
 .Image-align--start {
     margin-right: auto;
     margin-left: 0;
