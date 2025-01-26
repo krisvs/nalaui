@@ -7,6 +7,10 @@
         ".": "./dist/bundle.js",
         "./components": "./dist/components.js",
         "./components.css": "./dist/components.css",
+        "./blocks": "./dist/blocks.js",
+        "./blocks.css": "./dist/blocks.css",
+        "./sections": "./dist/sections.js",
+        "./sections.css": "./dist/sections.css",
         "./utils": "./dist/utils.js",
         "./stylesheets/*": "./stylesheets/*"
     },
