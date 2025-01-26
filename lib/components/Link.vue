@@ -8,15 +8,16 @@
         :target="newTab ? '_blank' : '_self'"
         :rel="newTab ? 'noopener noreferrer' : undefined">
 
+        <Icon
+            class="Icon"
+            :icon="icon"
+            :size="iconSize"
+            :kind="iconKind" />
+
         <div v-if="label">
             {{ label }}
         </div>
 
-        <Image
-            :src="imgSrc"
-            :alt="imgAlt"
-            size="icon"
-            align="center" />
     </a>
 </template>
 
@@ -25,8 +26,9 @@ export default {
     props: {
         href: { type: String, required: true },
         label: { type: String, required: false },
-        imgSrc: { type: String, required: false },
-        imgAlt: { type: String, required: false },
+        icon: { type: String, required: false },
+        iconSize: { type: String, required: false },
+        iconKind: { type: String, required: false },
         kindHover: {
             type: String,
             default: 'default',
@@ -41,6 +43,10 @@ export default {
 .Link:hover {
     color: var(--color-text-subtle);
     text-decoration: underline;
+}
+
+.Icon {
+    padding-right: var(--sp0-5);
 }
 
 .Link-kindHover--default:hover { color: var(--color-text-subtle); }

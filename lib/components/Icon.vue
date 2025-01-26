@@ -2,8 +2,9 @@
     <i
         class="Icon"
         :class="[
-            `Icon--${size}`,
-            icon
+            `Icon--${kind}`,
+            icon,
+            size ? `fa-${size}` : '' // Append size class like 'fa-lg'
         ]" />
 </template>
 
@@ -11,27 +12,21 @@
 export default {
     props: {
         icon: { type: String, required: true },
-        size: {
-            type: String,
-            default: 'medium',
-            validator: value => ['small', 'medium', 'large'].includes(value)
-        }
+        kind: { type: String, required: false },
+        size: { type: String, required: false }
     },
 
 };
 </script>
 
 <style scoped>
-.Icon {
-    font-size: var(--fs-2);
-}
 
-.Icon--small {
-    font-size: var(--fs-1);
-}
-
-.Icon--large {
-    font-size: var(--fs-3);
-}
+.Icon--default { color: var(--color-text-default); }
+.Icon--primary { color: var(--color-primary-4); }
+.Icon--secondary { color: var(--color-secondary-4); }
+.Icon--tertiary { color: var(--color-tertiary-4); }
+.Icon--success { color: var(--color-success-4); }
+.Icon--warning { color: var(--color-warning-4); }
+.Icon--danger { color: var(--color-danger-4); }
 
 </style>

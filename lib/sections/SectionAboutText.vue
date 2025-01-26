@@ -1,10 +1,11 @@
 <template>
     <section
-        class="AboutText"
+        class="Section"
         :class="[
             `Background--${background}`,
         ]">
         <BlockTitleContent
+            class="Content"
             :title="title"
             :text="text"
             :kind="kind"
@@ -29,11 +30,18 @@ export default {
 </script>
 
 <style scoped>
-.AboutText {
+.Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: var(--sp3);
 }
 
-.Background--default { background-color: var(--color-default-0); }
+.Content {
+    max-width: var(--content-width);
+}
+
+.Background--default { backgrounsd-color: var(--color-default-0); }
 .Background--primary { background-color: var(--color-primary-0); }
 .Background--secondary { background-color: var(--color-secondary-0); }
 .Background--tertiary { background-color: var(--color-tertiary-0); }

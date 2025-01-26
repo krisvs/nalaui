@@ -22,7 +22,7 @@
                 kind="primary" />
             <SectionAboutText
                 title="Sushi and Manju"
-                align="start"
+                align="center"
                 kind="primary"
                 background="secondary"
                 text="Sushi and Manju are two adorable dogs on a mission to explore the great outdoors. Their incredible journey through forests, meadows, and mountains, captured in stunning photography, will leave you breathless and inspired." />
@@ -86,12 +86,16 @@ export default {
                 {
                     href: 'https://www.instagram.com/waggyshepherds/',
                     alt: 'Waggy Shepherds Instagram channel',
-                    src: 'dev/assets/img/instagram.svg'
+                    icon: 'fa-brands fa-instagram',
+                    iconSize: 'lg',
+                    iconKind: 'secondary'
                 },
                 {
                     href: 'https://www.youtube.com/@WaggyShepherds',
                     alt: 'Waggy Shepherds YouTube Channel',
-                    src: 'dev/assets/img/youtube.svg'
+                    icon: 'fa-brands fa-youtube',
+                    iconSize: 'lg',
+                    iconKind: 'secondary'
                 },
             ],
         };

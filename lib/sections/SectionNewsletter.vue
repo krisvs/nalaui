@@ -1,10 +1,12 @@
 <template>
     <section
-        class="Newsletter"
+        class="Section"
         :class="[
             `Background--${background}`,
         ]">
-        <VGroup :align="align">
+        <VGroup
+            class="Content"
+            :align="align">
             <Image
                 v-if="imgSrc"
                 :src="imgSrc"
@@ -21,6 +23,7 @@
             <InputText
                 v-model="email"
                 class="InputText"
+
                 placeholder="Enter your email"
                 icon="fas fa-envelope" />
 
@@ -66,8 +69,15 @@ export default {
 </script>
 
 <style scoped>
-.Newsletter {
+.Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: var(--sp3);
+}
+
+.Content {
+    max-width: var(--content-width);
 }
 
 .Background--default { background-color: var(--color-default-0); }

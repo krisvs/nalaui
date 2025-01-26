@@ -3,7 +3,7 @@
         <HGroup
             justify="space-around"
             class="FooterEnd">
-            <div class="Column Column-Image">
+            <div class="Column Column-Image first-image">
                 <Image
                     :src="imgSrc"
                     :alt="imgAlt"
@@ -12,13 +12,14 @@
             </div>
 
             <div class="Column Column-Links">
-                <HGroup gap="2">
+                <HGroup gap="2" class="LinksGroup">
                     <Link
-                        v-for="link, idx in socialLinks"
+                        v-for="(link, idx) in socialLinks"
                         :key="idx"
                         :href="link.href"
-                        :imgSrc="link.src"
-                        :imgAlt="link.alt"
+                        :icon="link.icon"
+                        :iconSize="link.iconSize"
+                        :iconKind="link.iconKind"
                         :newTab="true" />
                 </HGroup>
             </div>
@@ -55,7 +56,9 @@ export default {
 
 .FooterEnd {
     --column-Links: 0 0 auto;
-    --column-Image:0 0 128px;
+    --column-Image: 0 0 128px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .FooterLinks-layout:deep(.Column) {
@@ -71,6 +74,20 @@ export default {
 }
 
 @media (max-width: 640px) {
+    .FooterEnd {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-image {
+        display: none; /* Hide the first image on mobile */
+    }
+
+    .LinksGroup {
+        order: -1; /* Move links to the top */
+        margin-bottom: var(--sp2);
+    }
+
     .FooterLinks-layout {
         --column-Links: 1 1 auto;
     }

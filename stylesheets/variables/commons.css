@@ -1,5 +1,7 @@
 :root {
-    --container-width: 920px;
+    --container-width: 640px;
+    --container-width-mobile: 420px;
+    --content-width: 640px;
     
     --background-color: var(--color-base-0);
     --text-color: var(--color-text-0);

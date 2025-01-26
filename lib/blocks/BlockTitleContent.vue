@@ -1,5 +1,6 @@
 <template>
     <VGroup
+        justify="space-around"
         :align="align">
         <Title
             :title="title"

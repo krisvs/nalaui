@@ -6,8 +6,8 @@
             <GalleryBtn />
             <GalleryInput />
             <GalleryTab />
-            <Sections />
         </div>
+        <Sections />
     </div>
 </template>
 
@@ -34,12 +34,16 @@ export default {
 </script>
 
 <style scoped>
-.Root {
-    padding: 0 var(--sp2);
-}
 
 .Container {
     max-width: var(--container-width);
-    margin: 0 auto;
+    margin: var(--sp4) auto;
 }
+
+@media screen and (max-width: 420px) {
+    .Container {
+        padding: var(--sp2);
+    }
+}
+
 </style>
