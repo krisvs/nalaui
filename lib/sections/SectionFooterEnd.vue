@@ -40,9 +40,9 @@
 export default {
     props: {
         imgSrc: { type: String, required: true },
-        imgAlt: { type: String, required: true },
-        imgSize: { type: String, required: true },
-        alignImg: { type: String, required: true },
+        imgAlt: { type: String, required: false },
+        imgSize: { type: String, required: false },
+        alignImg: { type: String, required: false },
         socialLinks: { type: Array, required: true },
     }
 };

@@ -44,6 +44,7 @@ export default {
         text: { type: String, required: false, default: '' },
         backgroundImg: { type: String, required: true },
         imgSrc: { type: String, required: false },
+        imgSize: { type: String, required: false },
         imgAlt: { type: String, required: false },
         opacity: {
             type: Number,
@@ -68,6 +69,10 @@ export default {
             type: String,
             default: 'primary',
             validator: value => ['default', 'primary', 'secondary', 'tertiary'].includes(value)
+        },
+        headlineMarginTop: {
+            type: String,
+            default: 'var(--sp24)'
         }
     }
 };
@@ -124,6 +129,7 @@ export default {
 .Headline-align--center {
     text-align: center;
     margin-top: var(--sp24);
+    margin-top: v-bind(headlineMarginTop);
 }
 .Headline-align--end { text-align: end; }
 </style>

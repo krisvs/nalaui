@@ -1,6 +1,5 @@
 <template>
     <VGroup
-        justify="space-around"
         :align="align">
         <Title
             :title="title"
@@ -15,16 +14,18 @@
             :align="align" />
         <Btn
             v-if="btnLabel"
+            class="Button"
             :title="btnLabel"
             :label="btnLabel"
-            :kind="btnKind"
-            :link="btnLink" />
+            :kind="kind"
+            @click="navigateToLink" />
     </VGroup>
 
 </template>
 
 <script>
 export default {
+
     props: {
         title: { type: String, required: true },
         subtitle: { type: String, required: false },
@@ -35,5 +36,28 @@ export default {
         btnKind: { type: String, required: false },
         btnLink: { type: String, required: false },
     },
+
+    methods: {
+        navigateToLink() {
+            if (this.btnLink) {
+                window.location.href = this.btnLink;
+            }
+        }
+    }
+
 };
 </script>
+
+<style scoped>
+.VGroup > * {
+    margin-bottom: var(--sp1);
+}
+
+.Title, .Subtitle, .Text {
+    line-height: 1.2;
+}
+
+.Button {
+    padding-top: var(--sp2);
+}
+</style>

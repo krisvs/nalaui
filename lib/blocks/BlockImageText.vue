@@ -8,8 +8,9 @@
             class="Image"
             :src="imgSrc"
             :alt="imgAlt"
+            align="center"
             :size="imgSize"
-            :hoverPop="false" />
+            :hoverPop="true" />
 
         <BlockTitleContent
             class="Text"
@@ -17,6 +18,8 @@
             :subtitle="subtitle"
             :text="text"
             :kind="kind"
+            :btnLabel="btnLabel"
+            :btnLink="btnLink"
             :align="align" />
     </div>
 </template>
@@ -27,11 +30,13 @@ export default {
         imgSrc: { type: String, required: true },
         imgAlt: { type: String, required: false },
         imgSize: { type: String, required: true },
-        alignImg: { type: String, required: false },
+        align: { type: String, required: false },
         title: { type: String, required: true },
         subtitle: { type: String, required: false },
         text: { type: String, required: true },
         kind: { type: String, required: true },
+        btnLabel: { type: String, required: false },
+        btnLink: { type: String, required: false },
         imagePosition: {
             type: String,
             default: 'left',
@@ -58,5 +63,13 @@ export default {
 
 .Image {
     border-radius: var(--sp1);
+}
+
+@media (max-width: 640px) {
+    .BlockImageText {
+        padding: var(--sp1);
+        align-items: center;
+        flex-direction: column;
+    }
 }
 </style>

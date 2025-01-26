@@ -1,6 +1,10 @@
 <template>
     <section class="Section">
         <div class="Content">
+            <Title
+                :title="title"
+                :kind="kind"
+                :align="alignTitle" />
             <BlockImageText
                 v-for="(item, index) in content"
                 :key="index"
@@ -9,9 +13,11 @@
                 :text="item.text"
                 :imgSrc="item.imgSrc"
                 :imgAlt="item.imgAlt"
-                s
+                :btnLink="item.btnLink"
                 :imgSize="imgSize"
-                :alignImg="item.alignImg"
+                :btnLabel="btnLabel"
+                :align="align"
+                :kind="kind"
                 :imagePosition="index % 2 === 0 ? 'left' : 'right'" />
         </div>
     </section>
@@ -20,8 +26,13 @@
 <script>
 export default {
     props: {
+        title: { type: String, required: true },
         content: { type: Array, required: true },
         imgSize: { type: String, required: true },
+        align: { type: String, required: true },
+        alignTitle: { type: String, required: true },
+        btnLabel: { type: String, required: false },
+        kind: { type: String, required: true },
     },
 };
 </script>

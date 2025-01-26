@@ -20,10 +20,11 @@
                 imgSrc="dev/assets/img/logo.png"
                 imgAlt="Overlay Waggy Shepherds Logo"
                 height="50vh"
-                opacity="0.25"
+                :opacity="0.25"
                 alignImg="center"
                 alignText="center"
                 title="Waggy Shepherds"
+                headlineMarginTop="var(--sp48)"
                 kind="primary" />
             <SectionAboutText
                 title="Sushi and Manju"
@@ -32,8 +33,13 @@
                 background="secondary"
                 text="Sushi and Manju are two adorable dogs on a mission to explore the great outdoors. Their incredible journey through forests, meadows, and mountains, captured in stunning photography, will leave you breathless and inspired." />
             <SectionImageText
+                title="The Pack"
+                align="start"
+                alignTitle="center"
+                btnLabel="Read more"
+                kind="primary"
                 :content="content"
-                imgSize="small" />
+                imgSize="medium" />
             <SectionNewsletter
                 title="Join the Pack!"
                 text="Stay updated on Sushi and Manju's latest adventures and get exclusive content delivered right to your inbox. Hurry, adventure awaits! Sign up now!"
@@ -52,7 +58,7 @@
                 imgSrc="dev/assets/img/mountains-light.png"
                 imgAlt="Waggy Shepherds Mountains"
                 imgSize="large"
-                alignImg="center"
+                align="center"
                 :socialLinks="socialLinks" />
         </VGroup>
     </div>
@@ -83,8 +89,7 @@ export default {
                     text: '4 year old rescue who found us, and waited outside work asking for help. Energetic, but calculated for a Malinois.',
                     imgSrc: 'dev/assets/img/sushi1.jpg',
                     imgAlt: 'Sushi',
-                    alignImg: 'center',
-                    btnLink: 'https://waggyshepherds.com/sushi',
+                    btnLink: 'https://waggyshepherds.com/blog/sushi-pimenta-rescue-story',
                 },
                 {
                     title: 'Manju',
@@ -92,7 +97,6 @@ export default {
                     text: '2 year old adopted puppy from an unwanted litter. Jumps 2 meters high, and is able to squeeze into small places (we don\'t even know how). Completely unstoppable.',
                     imgSrc: 'dev/assets/img/manju1.jpg',
                     imgAlt: 'Manju',
-                    alignImg: 'center',
                     btnLink: 'https://waggyshepherds.com/blog/manju-adoption-story',
                 },
                 {
@@ -101,7 +105,6 @@ export default {
                     text: '10 year old rescued street cat. Too clever for her own good.',
                     imgSrc: 'dev/assets/img/satis-tufinhas.jpg',
                     imgAlt: 'Satis',
-                    alignImg: 'center',
                     btnLink: 'https://waggyshepherds.com/blog/satis-kingdom',
                 },
                 {
@@ -110,7 +113,6 @@ export default {
                     text: '9 year old rescued Siamese cat. Doesn`t care about anything. Boss of the group. Meows incessantly.',
                     imgSrc: 'dev/assets/img/satis-tufinhas-2.jpg',
                     imgAlt: 'Tufinhas',
-                    alignImg: 'center',
                     btnLink: 'https://waggyshepherds.com/blog/satis-kingdom',
                 }
             ],

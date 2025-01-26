@@ -54,7 +54,7 @@ export default {
     props: {
         label: { type: String },
         title: { type: String },
-        icon: { type: String },
+        icon: { type: String, required: false },
         iconPos: { type: String, default: 'left' },
         kind: { type: String, default: 'link-default' },
         hoverKind: { type: String },

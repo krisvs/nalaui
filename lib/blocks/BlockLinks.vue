@@ -1,9 +1,9 @@
 <template>
     <div
-        class="LinkStack"
+        class="BlockLinks"
         :class="[
-            `LinkStack-align--${align}`,
-            `LinkStack-direction--${direction}`
+            `BlockLinks-align--${align}`,
+            `BlockLinks-direction--${direction}`
         ]">
         <Link
             v-for="link, idx in links"
@@ -18,6 +18,7 @@
 export default {
     props: {
         links: { type: Array, required: true },
+        kindHover: { type: String, required: false },
         direction: {
             type: String,
             default: 'column',
@@ -34,42 +35,41 @@ export default {
 
 <style scoped>
 /* Default state (desktop) */
-.LinkStack {
+.BlockLinks {
     display: flex;
-    gap: var(--sp2);
     width: 100%;
 }
 
-.LinkStack-direction--row {  flex-direction: row; }
-.LinkStack-direction--column { flex-direction: column; }
+.BlockLinks-direction--row {  flex-direction: row; }
+.BlockLinks-direction--column { flex-direction: column; }
 
-.LinkStack-align--start {
+.BlockLinks-align--start {
     align-items: flex-start;
     text-align: start;
 }
 
-.LinkStack-align--center {
+.BlockLinks-align--center {
     align-items: center;
     text-align: center;
 }
 
-.LinkStack-align--end {
+.BlockLinks-align--end {
     align-items: flex-end;
     text-align: end;
 }
 
 /* Mobile state */
 @media screen and (max-width: 420px) {
-    .LinkStack {
+    .BlockLinks {
         flex-direction: row !important;
         justify-content: center;
         flex-wrap: wrap;
         gap: var(--sp3);
     }
 
-    .LinkStack-align--start,
-    .LinkStack-align--center,
-    .LinkStack-align--end {
+    .BlockLinks-align--start,
+    .BlockLinks-align--center,
+    .BlockLinks-align--end {
         align-items: center;
         justify-content: center;
         text-align: center;

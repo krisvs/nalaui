@@ -2,7 +2,7 @@
     <section class="FooterLinks">
         <HGroup
             justify="center"
-            wrap="true"
+            :wrap="true"
             class="FooterLinks-layout">
             <div class="Column Column-Links">
                 <BlockLinks
