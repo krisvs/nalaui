@@ -8,7 +8,8 @@
         "./components": "./dist/components.js",
         "./components.css": "./dist/components.css",
         "./utils": "./dist/utils.js",
-        "./stylesheets/*": "./stylesheets/*"
+        "./stylesheets/components.css": "./dist/components.css",
+        "./stylesheets/*": "./dist/*"
     },
     "files": [
         "dist",
