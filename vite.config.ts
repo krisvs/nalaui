@@ -9,7 +9,7 @@ export default defineConfig({
                 'components': 'lib/components/index.ts',
                 'utils': 'lib/utils/index.ts',
             },
-            name: 'nightshade',
+            name: 'manjui',
             formats: ['es'],
             cssFileName: 'components',
         },
