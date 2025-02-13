@@ -7,13 +7,11 @@ export default defineConfig({
             entry: {
                 'bundle': 'lib/index.ts',
                 'components': 'lib/components/index.ts',
-                'blocks': 'lib/blocks/index.ts',
-                'sections': 'lib/sections/index.ts',
                 'utils': 'lib/utils/index.ts',
             },
-            name: 'manjui',
+            name: 'nightshade',
             formats: ['es'],
-            cssFileName: 'full',
+            cssFileName: 'components',
         },
         rollupOptions: {
             external: ['vue'],
