@@ -4,6 +4,7 @@ import Divider from './Divider.vue';
 import HGroup from './HGroup.vue';
 import HStack from './HStack.vue';
 import Icon from './Icon.vue';
+import IconLink from './IconLink.vue';
 import Image from './Image.vue';
 import InputBase from './InputBase.vue';
 import InputText from './InputText.vue';
@@ -23,6 +24,7 @@ export {
     HGroup,
     HStack,
     Icon,
+    IconLink,
     Image,
     InputBase,
     InputText,
