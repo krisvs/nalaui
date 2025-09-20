@@ -21,10 +21,13 @@ export default defineConfig({
                 },
                 preserveModules: false,
                 exports: 'named',
+                format: 'es',
+                interop: 'auto',
             }
         },
         minify: false,
         sourcemap: true,
+        target: 'es2020',
     },
     plugins: [
         vue()
