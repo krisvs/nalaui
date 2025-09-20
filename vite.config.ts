@@ -15,7 +15,16 @@ export default defineConfig({
         },
         rollupOptions: {
             external: ['vue'],
+            output: {
+                globals: {
+                    vue: 'Vue'
+                },
+                preserveModules: false,
+                exports: 'named',
+            }
         },
+        minify: false,
+        sourcemap: true,
     },
     plugins: [
         vue()
@@ -23,6 +32,7 @@ export default defineConfig({
     esbuild: {
         legalComments: 'none',
         keepNames: true,
+        target: 'es2020',
     },
     server: {
         port: 8881
