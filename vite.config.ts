@@ -1,5 +1,6 @@
 import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
     build: {
@@ -14,28 +15,18 @@ export default defineConfig({
             cssFileName: 'components',
         },
         rollupOptions: {
-            external: ['vue'],
-            output: {
-                globals: {
-                    vue: 'Vue'
-                },
-                preserveModules: false,
-                exports: 'named',
-                format: 'es',
-                interop: 'auto',
-            }
+            external: ['vue', 'nanoevent', 'mesh-decorators', 'mesh-ioc'],
         },
-        minify: false,
-        sourcemap: true,
-        target: 'es2020',
     },
     plugins: [
-        vue()
+        vue(),
+        dts({
+            include: ['lib/**'],
+        }),
     ],
     esbuild: {
         legalComments: 'none',
         keepNames: true,
-        target: 'es2020',
     },
     server: {
         port: 8881
