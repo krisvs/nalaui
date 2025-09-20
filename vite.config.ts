@@ -15,7 +15,7 @@ export default defineConfig({
             cssFileName: 'components',
         },
         rollupOptions: {
-            external: ['vue', 'nanoevent', 'mesh-decorators', 'mesh-ioc'],
+            external: ['vue', 'vue-router', 'nanoevent', 'mesh-decorators', 'mesh-ioc'],
         },
     },
     plugins: [

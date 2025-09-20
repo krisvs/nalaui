@@ -17,7 +17,7 @@ export abstract class BaseRouter {
 
     constructor() {
         this.router = this.createRouter();
-        this.router.afterEach(route => {
+        this.router.afterEach((route: RouteLocation) => {
             document.title = String(route.meta.title ?? this.defaultPageTitle);
             this.onRouteChange(route);
         });
