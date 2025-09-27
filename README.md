@@ -1,6 +1,6 @@
-# Manjui
+# Nalaui
 
-Vue UI library & design system based on Nightshade UI ([nightshade](https://www.npmjs.com/package/nightshade)).
+Vue UI library & design system based on Manju UI ([manjui](https://github.com/christellevs/manjui)).
 
 Adds blocks and sections to the library to experiment with quicker landing page and website building.
 
