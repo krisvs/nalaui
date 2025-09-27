@@ -26,11 +26,11 @@
     --color-default-shadow: var(--color-default-4);
 
     --color-primary: var(--color-primary-2);
-    --color-primary-0: hsl(310deg, 64%, 75%);
-    --color-primary-1: hsl(310deg, 64%, 64%);
-    --color-primary-2: hsl(310deg, 64%, 50%);
-    --color-primary-3: hsl(310deg, 64%, 44%);
-    --color-primary-4: hsl(310deg, 64%, 24%);
+    --color-primary-0: hsl(260deg, 90%, 85%);
+    --color-primary-1: hsl(260deg, 90%, 75%);
+    --color-primary-2: hsl(260deg, 90%, 62%);
+    --color-primary-3: hsl(260deg, 90%, 55%);
+    --color-primary-4: hsl(260deg, 90%, 30%);
     --color-primary-text: #fff;
     --color-primary-surface-top: var(--color-primary-1);
     --color-primary-surface-bottom: var(--color-primary-3);
@@ -39,11 +39,11 @@
     --color-primary-shadow: var(--color-primary-4);
 
     --color-secondary: var(--color-secondary-2);
-    --color-secondary-0: hsl(290deg, 50%, 80%);
-    --color-secondary-1: hsl(290deg, 50%, 68%);
-    --color-secondary-2: hsl(290deg, 50%, 60%);
-    --color-secondary-3: hsl(290deg, 50%, 48%);
-    --color-secondary-4: hsl(290deg, 50%, 24%);
+    --color-secondary-0: hsl(320deg, 85%, 85%);
+    --color-secondary-1: hsl(320deg, 85%, 75%);
+    --color-secondary-2: hsl(320deg, 85%, 62%);
+    --color-secondary-3: hsl(320deg, 85%, 55%);
+    --color-secondary-4: hsl(320deg, 85%, 30%);
     --color-secondary-text: #fff;
     --color-secondary-surface-top: var(--color-secondary-1);
     --color-secondary-surface-bottom: var(--color-secondary-3);

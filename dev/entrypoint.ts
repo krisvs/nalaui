@@ -7,9 +7,11 @@ import { createApp } from 'vue';
 
 import * as components from '../lib/components/index.js';
 import { themePlugin } from '../lib/index.js';
-import Root from './Root.vue';
+import DocsLayout from './components/DocsLayout.vue';
+import { router } from './router.js';
 
-const app = createApp(Root);
+const app = createApp(DocsLayout);
+app.use(router);
 app.use(themePlugin);
 
 for (const [name, component] of Object.entries(components)) {

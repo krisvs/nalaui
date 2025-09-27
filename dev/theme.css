@@ -2,4 +2,80 @@
 
 :root {
     --font-main: "Futura PT C", Trebuchet MS, Arial, sans-serif;
+
+    /* Enhanced visual design variables */
+    --header-height: 64px;
+    --sidebar-width: 280px;
+    --container-width: 1400px;
+
+    /* Animation and transition variables */
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.25s ease;
+    --transition-slow: 0.4s ease;
+
+    /* Border radius scales */
+    --radius-small: 4px;
+    --radius-medium: 8px;
+    --radius-large: 12px;
+    --radius-xlarge: 16px;
+
+    /* Shadow scales */
+    --shadow-small: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --shadow-large: 0 8px 32px rgba(0, 0, 0, 0.16);
+    --shadow-xlarge: 0 16px 48px rgba(0, 0, 0, 0.2);
+}
+
+/* Global improvements */
+* {
+    scroll-behavior: smooth;
+}
+
+/* Improved scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-base-1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-base-3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-base-4);
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+    outline: 2px solid var(--color-primary-2);
+    outline-offset: 2px;
+}
+
+/* Enhanced link styles */
+a {
+    transition: color var(--transition-fast);
+}
+
+/* Button hover animations */
+button {
+    transition: all var(--transition-fast);
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* Selection color */
+::selection {
+    background: var(--color-primary-0);
+    color: var(--color-primary-3);
 }

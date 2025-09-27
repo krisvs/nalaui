@@ -3,9 +3,9 @@ import { Mesh } from 'mesh-ioc';
 import { App as VueApp } from 'vue';
 
 import * as components from './components/index.js';
-import { ThemeManager } from './utils/ThemeManager.js';
 import { invokeInitHandlers } from './utils/init.js';
 import { globalProvideMap } from './utils/provide.js';
+import { ThemeManager } from './utils/ThemeManager.js';
 
 export class BaseApp {
 
@@ -52,4 +52,3 @@ export class BaseApp {
     }
 
 }
-

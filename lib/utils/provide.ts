@@ -7,4 +7,3 @@ export function provide(alias: string) {
         globalProvideMap.set(alias, target);
     };
 }
-

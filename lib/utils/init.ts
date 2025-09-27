@@ -7,4 +7,3 @@ export async function invokeInitHandlers(mesh: Mesh, recursive = true) {
     const promises = invokeMethods('init', mesh, recursive);
     await Promise.all(promises);
 }
-

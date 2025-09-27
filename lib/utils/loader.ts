@@ -42,4 +42,3 @@ export abstract class Loader<Arg = void> {
     }
 
 }
-
