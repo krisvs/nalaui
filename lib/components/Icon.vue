@@ -3,7 +3,7 @@
         class="Icon"
         :class="[
             `Icon--${kind}`,
-            icon,
+            name,
             size ? `fa-${size}` : ''
         ]" />
 </template>
@@ -11,7 +11,7 @@
 <script>
 export default {
     props: {
-        icon: { type: String, required: true },
+        name: { type: String, required: true },
         kind: { type: String, required: false },
         size: { type: String, required: false }
     },

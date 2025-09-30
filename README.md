@@ -1,6 +1,6 @@
 # NalaUI
 
-Vue UI library & design system based on Manju UI ([nalaui](https://github.com/christellevs/nalaui)).
+Vue UI library & design system based on Manju UI ([nalaui](https://github.com/krisvs/nalaui)).
 
 Adds blocks and sections to the library to experiment with quicker landing page and website building.
 

@@ -125,4 +125,9 @@
     --color-default-3: var(--color-base-1);
     --color-default-4: var(--color-base-0);
 
+    /* Improved contrast for default buttons in dark mode */
+    --color-default-surface-top: hsl(280deg, 5%, 36%);
+    --color-default-surface-bottom: hsl(280deg, 5%, 28%);
+    --color-default-outline: hsl(280deg, 5%, 40%);
+
 }
