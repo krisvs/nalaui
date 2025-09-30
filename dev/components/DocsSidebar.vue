@@ -20,10 +20,10 @@
                 <h3 class="DocsSidebar-title">Components</h3>
                 <ul class="DocsSidebar-list">
                     <li>
-                        <div class="DocsSidebar-category">
+                        <router-link to="/components#layout" class="DocsSidebar-category" @click="$emit('close')">
                             <Icon name="fas fa-layer-group" />
                             Layout
-                        </div>
+                        </router-link>
                         <ul class="DocsSidebar-sublist">
                             <li>
                                 <router-link to="/components#vgroup" class="DocsSidebar-link" @click="$emit('close')">
@@ -48,10 +48,10 @@
                         </ul>
                     </li>
                     <li>
-                        <div class="DocsSidebar-category">
+                        <router-link to="/components#typography" class="DocsSidebar-category" @click="$emit('close')">
                             <Icon name="fas fa-font" />
                             Typography
-                        </div>
+                        </router-link>
                         <ul class="DocsSidebar-sublist">
                             <li>
                                 <router-link to="/components#title" class="DocsSidebar-link" @click="$emit('close')">
@@ -76,10 +76,10 @@
                         </ul>
                     </li>
                     <li>
-                        <div class="DocsSidebar-category">
+                        <router-link to="/components#forms" class="DocsSidebar-category" @click="$emit('close')">
                             <Icon name="fas fa-edit" />
                             Forms
-                        </div>
+                        </router-link>
                         <ul class="DocsSidebar-sublist">
                             <li>
                                 <router-link to="/components#btn" class="DocsSidebar-link" @click="$emit('close')">
@@ -99,10 +99,10 @@
                         </ul>
                     </li>
                     <li>
-                        <div class="DocsSidebar-category">
+                        <router-link to="/components#ui-elements" class="DocsSidebar-category" @click="$emit('close')">
                             <Icon name="fas fa-star" />
                             UI Elements
-                        </div>
+                        </router-link>
                         <ul class="DocsSidebar-sublist">
                             <li>
                                 <router-link to="/components#tab" class="DocsSidebar-link" @click="$emit('close')">
@@ -216,6 +216,22 @@ defineEmits(['close']);
     font-weight: var(--font-weight-bold);
     color: var(--color-text-1);
     margin-bottom: var(--sp1);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 0;
+}
+
+.DocsSidebar-category:hover {
+    color: var(--color-text-0);
+    background: var(--color-base-1);
+}
+
+.DocsSidebar-category.router-link-active {
+    color: var(--color-primary-2);
+    background: var(--color-primary-0);
+    background-opacity: 0.1;
+    border-right: 3px solid var(--color-primary-2);
 }
 
 .DocsSidebar-sublist {
