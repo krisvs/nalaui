@@ -27,20 +27,6 @@
                     </router-link>
                 </div>
             </div>
-            <div class="Hero-visual">
-                <div class="Hero-showcase">
-                    <div class="Demo-card">
-                        <VGroup gap="2">
-                            <Title>Sample Component</Title>
-                            <Text>This is how easy it is to build with Nalaui</Text>
-                            <HGroup gap="1">
-                                <Btn variant="primary">Primary</Btn>
-                                <Btn variant="secondary">Secondary</Btn>
-                            </HGroup>
-                        </VGroup>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <!-- Features Section -->
@@ -143,16 +129,16 @@
 
 /* Hero Section */
 .Hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--sp6);
+    display: flex;
+    justify-content: center;
     align-items: center;
     min-height: 70vh;
     padding: var(--sp6) 0;
+    text-align: center;
 }
 
 .Hero-content {
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .Hero-badge {
@@ -194,6 +180,7 @@
     display: flex;
     gap: var(--sp2);
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .Hero-btn {
@@ -229,30 +216,6 @@
     background: var(--color-base-2);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.Hero-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Hero-showcase {
-    perspective: 1000px;
-}
-
-.Demo-card {
-    background: var(--color-base-0);
-    border: 1px solid var(--color-base-2);
-    border-radius: 12px;
-    padding: var(--sp4);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    transform: rotateY(-5deg) rotateX(5deg);
-    transition: transform 0.3s ease;
-}
-
-.Demo-card:hover {
-    transform: rotateY(0deg) rotateX(0deg);
 }
 
 /* Features Section */
@@ -382,20 +345,6 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .Hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: var(--sp4);
-    }
-
-    .Hero-visual {
-        order: -1;
-    }
-
-    .Demo-card {
-        transform: none;
-    }
-
     .Features-grid {
         grid-template-columns: 1fr;
     }
