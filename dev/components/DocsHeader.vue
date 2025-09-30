@@ -136,7 +136,7 @@ const toggleTheme = () => {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: var(--font-weight-boldest);
+    font-weight: var(--font-weight-bold);
 }
 
 .DocsHeader-nav {

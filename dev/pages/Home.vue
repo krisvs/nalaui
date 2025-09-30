@@ -170,7 +170,7 @@
 
 .Hero-title {
     font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: var(--font-weight-boldest);
+    font-weight: var(--font-weight-bold);
     line-height: 1.1;
     margin: 0 0 var(--sp3) 0;
     color: var(--color-text-0);
@@ -270,7 +270,7 @@
 .Features-title {
     text-align: center;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-boldest);
+    font-weight: var(--font-weight-bold);
     margin: 0 0 var(--sp6) 0;
     color: var(--color-text-0);
 }
@@ -335,7 +335,7 @@
 .QuickStart-title {
     text-align: center;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-boldest);
+    font-weight: var(--font-weight-bold);
     margin: 0 0 var(--sp6) 0;
     color: var(--color-text-0);
 }

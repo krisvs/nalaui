@@ -310,7 +310,7 @@ const circleCode = `<HGroup gap="2">
 
 .PageHeader-title {
     font-size: 3rem;
-    font-weight: var(--font-weight-boldest);
+    font-weight: var(--font-weight-bold);
     margin: 0 0 var(--sp2) 0;
     color: var(--color-text-0);
 }

@@ -57,7 +57,7 @@
 
 .NotFound-title {
     font-size: 6rem;
-    font-weight: var(--font-weight-boldest);
+    font-weight: var(--font-weight-bold);
     margin: 0;
     background: linear-gradient(135deg, var(--color-primary-2), var(--color-secondary-2));
     -webkit-background-clip: text;
