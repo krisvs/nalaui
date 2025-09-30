@@ -46,7 +46,7 @@ export default {
 }
 
 .Icon {
-    padding-right: var(--sp0-5);
+    padding-right: var(--sp0-4);
 }
 
 .Link-kindHover--default:hover { color: var(--color-text-subtle); }

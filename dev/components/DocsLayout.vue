@@ -11,6 +11,7 @@
                 </div>
             </main>
         </div>
+        <ScrollToTop />
     </div>
 </template>
 
@@ -19,6 +20,7 @@ import { ref } from 'vue';
 
 import DocsHeader from './DocsHeader.vue';
 import DocsSidebar from './DocsSidebar.vue';
+import ScrollToTop from './ScrollToTop.vue';
 
 const sidebarOpen = ref(false);
 </script>
