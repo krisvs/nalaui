@@ -199,6 +199,10 @@ defineEmits(['close']);
     letter-spacing: 0.5px;
     margin: 0 0 var(--sp2) 0;
     padding: 0 var(--sp3);
+    background: linear-gradient(135deg, var(--color-primary-3), var(--color-secondary-3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .DocsSidebar-list {
@@ -254,6 +258,7 @@ defineEmits(['close']);
     font-size: var(--font-size-small);
     transition: all 0.2s;
     border-radius: 0;
+    border-right: 3px solid var(--color-primary-2);
 }
 
 .DocsSidebar-sublist .DocsSidebar-link {
