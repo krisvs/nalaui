@@ -13,7 +13,7 @@
                     Faster
                 </h1>
                 <p class="Hero-description">
-                    Nalaui is a modern Vue 3 UI library with a complete design system.
+                    NalaUI is a modern Vue 3 UI library with a complete design system.
                     Create consistent, accessible, and beautiful user interfaces with minimal effort.
                 </p>
                 <div class="Hero-actions">
@@ -32,7 +32,7 @@
         <!-- Features Section -->
         <section class="Features">
             <div class="Features-container">
-                <h2 class="Features-title">Why Choose Nalaui?</h2>
+                <h2 class="Features-title">Why Choose NalaUI?</h2>
                 <div class="Features-grid">
                     <div class="Feature-card">
                         <div class="Feature-icon">
@@ -132,7 +132,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
     padding: var(--sp6) 0;
     text-align: center;
 }

@@ -3,7 +3,7 @@
         <div class="PageHeader">
             <h1 class="PageHeader-title">Getting Started</h1>
             <p class="PageHeader-description">
-                Get up and running with Nalaui in your Vue 3 project in just a few minutes.
+                Get up and running with NalaUI in your Vue 3 project in just a few minutes.
             </p>
         </div>
 
@@ -11,7 +11,7 @@
             <section class="Section">
                 <h2>Installation</h2>
                 <p>
-                    Nalaui is shipped for ESM environments and build systems like <a href="https://vite.dev" target="_blank">Vite</a>.
+                    NalaUI is shipped for ESM environments and build systems like <a href="https://vite.dev" target="_blank">Vite</a>.
                     The package consists of tree-shakable ESM components bundle and a set of CSS files.
                 </p>
 
@@ -51,7 +51,7 @@
                 <h2>Import CSS</h2>
 
                 <h3>Required Stylesheets</h3>
-                <p>Nalaui components require minimal global CSS to work:</p>
+                <p>NalaUI components require minimal global CSS to work:</p>
                 <ul>
                     <li>
                         <strong>variables.css</strong> - Global CSS variables that support the Design System
@@ -70,7 +70,7 @@
 
                 <h3>Optional Stylesheets</h3>
                 <p>
-                    Nalaui also includes optional global styles referred to as "modules".
+                    NalaUI also includes optional global styles referred to as "modules".
                     These are more opinionated and include utility classes, heading styles, article content styles etc.
                 </p>
 
@@ -90,7 +90,7 @@
 
             <section class="Section">
                 <h2>Complete Example</h2>
-                <p>Here's a complete example of setting up Nalaui in a Vue 3 application:</p>
+                <p>Here's a complete example of setting up NalaUI in a Vue 3 application:</p>
 
                 <h3>main.js</h3>
                 <CodeBlock
@@ -180,7 +180,7 @@ app.mount('#app');`;
 
 const appExample = `<template>
   <VGroup gap="4" class="app">
-    <Title>Welcome to Nalaui</Title>
+    <Title>Welcome to NalaUI</Title>
     <Text>Build beautiful Vue applications faster!</Text>
 
     <HGroup gap="2">

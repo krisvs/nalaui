@@ -10,7 +10,7 @@
                 </button>
                 <router-link to="/" class="DocsHeader-logo">
                     <div class="DocsHeader-logoIcon">N</div>
-                    <span class="DocsHeader-logoText">Nalaui</span>
+                    <span class="DocsHeader-logoText">NalaUI</span>
                 </router-link>
             </div>
 

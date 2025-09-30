@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is **Nalaui** (package name: manjui), a Vue 3 UI library and design system based on Nightshade UI. It provides a collection of Vue components with an integrated theming system and dependency injection architecture using mesh-ioc.
+This is **NalaUI** (package name: manjui), a Vue 3 UI library and design system based on Nightshade UI. It provides a collection of Vue components with an integrated theming system and dependency injection architecture using mesh-ioc.
 
 ## Development Commands
 

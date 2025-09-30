@@ -3,7 +3,7 @@
         <div class="PageHeader">
             <h1 class="PageHeader-title">Design System</h1>
             <p class="PageHeader-description">
-                Nalaui features a minimalistic design system based on CSS variables and lightweight conventions.
+                NalaUI features a minimalistic design system based on CSS variables and lightweight conventions.
             </p>
         </div>
 
@@ -120,7 +120,7 @@
                     Colors
                 </h2>
                 <p>
-                    Nalaui follows a simple yet efficient approach to manage dual-themed application color schemes.
+                    NalaUI follows a simple yet efficient approach to manage dual-themed application color schemes.
                 </p>
 
                 <h3>Color Tokens</h3>
@@ -209,7 +209,7 @@
                     Conventions
                 </h2>
                 <p>
-                    Nalaui follows consistent conventions to ensure predictable behavior and easy customization.
+                    NalaUI follows consistent conventions to ensure predictable behavior and easy customization.
                 </p>
 
                 <div class="ConventionsGrid">

@@ -1,4 +1,4 @@
-# Nalaui
+# NalaUI
 
 Vue UI library & design system based on Manju UI ([manjui](https://github.com/christellevs/manjui)).
 
