@@ -191,12 +191,12 @@
                 <ComponentDemo
                     id="circle"
                     title="Circle"
-                    description="Simple circular element for avatars or decorative purposes."
+                    description="Simple circular element for avatars or decorative purposes. Available sizes: normal, large, larger."
                     :code="circleCode">
-                    <HGroup gap="2" class="demo-container">
-                        <Circle style="background: var(--color-primary-2); width: 40px; height: 40px;" />
-                        <Circle style="background: var(--color-secondary-2); width: 40px; height: 40px;" />
-                        <Circle style="background: var(--color-base-3); width: 40px; height: 40px;" />
+                    <HGroup gap="3" class="demo-container" style="align-items: center;">
+                        <Circle size="normal" style="background: var(--color-primary-2);" />
+                        <Circle size="large" style="background: var(--color-secondary-2);" />
+                        <Circle size="larger" style="background: var(--color-tertiary-2);" />
                     </HGroup>
                 </ComponentDemo>
             </section>
@@ -292,10 +292,10 @@ const dividerCode = `<VGroup gap="2">
   <Text>Content below divider</Text>
 </VGroup>`;
 
-const circleCode = `<HGroup gap="2">
-  <Circle style="background: var(--color-primary-2); width: 40px; height: 40px;" />
-  <Circle style="background: var(--color-secondary-2); width: 40px; height: 40px;" />
-  <Circle style="background: var(--color-base-3); width: 40px; height: 40px;" />
+const circleCode = `<HGroup gap="3">
+  <Circle size="normal" style="background: var(--color-primary-2);" />
+  <Circle size="large" style="background: var(--color-secondary-2);" />
+  <Circle size="larger" style="background: var(--color-tertiary-2);" />
 </HGroup>`;
 </script>
 
