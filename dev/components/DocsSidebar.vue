@@ -220,6 +220,7 @@ defineEmits(['close']);
     cursor: pointer;
     transition: all 0.2s;
     border-radius: 0;
+    border-right: 3px solid var(--color-primary-2);
 }
 
 .DocsSidebar-category:hover {
@@ -229,9 +230,12 @@ defineEmits(['close']);
 
 .DocsSidebar-category.router-link-active {
     color: var(--color-primary-2);
-    background: var(--color-primary-0);
-    background-opacity: 0.1;
+    background: var(--color-base-1);
     border-right: 3px solid var(--color-primary-2);
+}
+
+:global(.theme-dark) .DocsSidebar-category.router-link-active {
+    color: var(--color-primary-1);
 }
 
 .DocsSidebar-sublist {
@@ -263,8 +267,6 @@ defineEmits(['close']);
 
 .DocsSidebar-link.router-link-active {
     color: var(--color-primary-2);
-    background: var(--color-primary-0);
-    background-opacity: 0.1;
     border-right: 3px solid var(--color-primary-2);
 }
 
