@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is **NalaUI** (package name: manjui), a Vue 3 UI library and design system based on Nightshade UI. It provides a collection of Vue components with an integrated theming system and dependency injection architecture using mesh-ioc.
+This is **NalaUI** (package name: nalaui), a Vue 3 UI library and design system based on Nightshade UI. It provides a collection of Vue components with an integrated theming system and dependency injection architecture using mesh-ioc.
 
 ## Development Commands
 
@@ -71,7 +71,7 @@ CSS architecture uses:
 When adding new components:
 1. Create Vue SFC in `lib/components/`
 2. Export from `lib/components/index.ts`
-3. Component will auto-register via BaseApp or ManjuiPlugin
+3. Component will auto-register via BaseApp or nalauiPlugin
 
 When modifying build:
 - Entry points defined in `vite.config.ts`

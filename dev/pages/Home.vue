@@ -90,7 +90,7 @@
                         <div class="Step-content">
                             <h3>Install</h3>
                             <div class="Code-block">
-                                <code>npm install manjui</code>
+                                <code>npm install nalaui</code>
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                         <div class="Step-content">
                             <h3>Import</h3>
                             <div class="Code-block">
-                                <code>import { components } from 'manjui'</code>
+                                <code>import { components } from 'nalaui'</code>
                             </div>
                         </div>
                     </div>

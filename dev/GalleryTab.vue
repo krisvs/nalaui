@@ -12,7 +12,7 @@
         </p>
 
         <p>
-            Manjui tabs are flexible and customizable, so that they can achieve both of these goals.
+            nalaui tabs are flexible and customizable, so that they can achieve both of these goals.
             Orientation is set as a component property, whereas the size, color and curve stiffness can be controlled with CSS variables.
         </p>
 

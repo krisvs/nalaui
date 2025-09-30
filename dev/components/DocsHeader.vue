@@ -37,7 +37,7 @@
                     <Icon :name="currentTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun'" />
                 </button>
                 <a
-                    href="https://github.com/christellevs/manjui"
+                    href="https://github.com/christellevs/nalaui"
                     target="_blank"
                     class="DocsHeader-githubLink"
                     aria-label="View on GitHub">

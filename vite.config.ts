@@ -10,7 +10,7 @@ export default defineConfig({
                 'components': 'lib/components/index.ts',
                 'utils': 'lib/utils/index.ts',
             },
-            name: 'manjui',
+            name: 'nalaui',
             formats: ['es'],
             cssFileName: 'components',
         },

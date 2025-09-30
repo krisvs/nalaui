@@ -1,6 +1,6 @@
 # NalaUI
 
-Vue UI library & design system based on Manju UI ([manjui](https://github.com/christellevs/manjui)).
+Vue UI library & design system based on Manju UI ([nalaui](https://github.com/christellevs/nalaui)).
 
 Adds blocks and sections to the library to experiment with quicker landing page and website building.
 
@@ -10,7 +10,7 @@ These add ons are very experimental and still under development. So please use a
 
 ### NPM Package (when published)
 ```bash
-npm install manjui
+npm install nalaui
 ```
 
 ### Local Development / Monorepo Usage
@@ -19,7 +19,7 @@ For monorepo setups or local development, you can use a file reference in your `
 ```json
 {
   "dependencies": {
-    "manjui": "file:../../libs/manjui"
+    "nalaui": "file:../../libs/nalaui"
   }
 }
 ```
@@ -35,16 +35,16 @@ npm install
 
 ```javascript
 // In your main app file (e.g., app.ts or main.ts)
-import * as manjuiComponents from 'manjui';
+import * as nalauiComponents from 'nalaui';
 
-// Import manjui styles
-import 'manjui/stylesheets/variables.css';
-import 'manjui/stylesheets/baseline.css';
+// Import nalaui styles
+import 'nalaui/stylesheets/variables.css';
+import 'nalaui/stylesheets/baseline.css';
 
 // Register components globally (Vue 3 example)
 const app = createApp(App);
 
-for (const [name, component] of Object.entries(manjuiComponents.components || {})) {
+for (const [name, component] of Object.entries(nalauiComponents.components || {})) {
     app.component(name, component);
 }
 ```
@@ -54,7 +54,7 @@ for (const [name, component] of Object.entries(manjuiComponents.components || {}
 ```vue
 <template>
   <VGroup gap="2">
-    <Title>Welcome to Manjui</Title>
+    <Title>Welcome to nalaui</Title>
     <Text>A Vue UI library for rapid development</Text>
     <Divider />
     <HGroup gap="1">
@@ -74,11 +74,11 @@ for (const [name, component] of Object.entries(manjuiComponents.components || {}
 
 ### 4. Styling
 
-Manjui uses CSS custom properties for theming. The main style files to import are:
+nalaui uses CSS custom properties for theming. The main style files to import are:
 
-- `manjui/stylesheets/variables.css` - Core design tokens
-- `manjui/stylesheets/baseline.css` - Base styles and resets
-- `manjui/stylesheets/full.css` - Complete stylesheet (alternative to importing separately)
+- `nalaui/stylesheets/variables.css` - Core design tokens
+- `nalaui/stylesheets/baseline.css` - Base styles and resets
+- `nalaui/stylesheets/full.css` - Complete stylesheet (alternative to importing separately)
 
 ## Development
 

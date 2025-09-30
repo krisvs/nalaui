@@ -2,12 +2,12 @@
     <article>
         <h2>Usage</h2>
         <p>
-            Manjui is shipped for ESM environments and build systems like <a href="https://vite.dev" target="_blank">Vite</a>.
+            nalaui is shipped for ESM environments and build systems like <a href="https://vite.dev" target="_blank">Vite</a>.
             The package consists of a tree-shakable ESM components bundle and a set of CSS files.
         </p>
 
         <h3>Install the package</h3>
-        <pre><code>npm i -s manjui</code></pre>
+        <pre><code>npm i -s nalaui</code></pre>
 
         <h3>Import components</h3>
 
@@ -25,14 +25,14 @@
 
         <h4>Required stylesheets</h4>
         <p>
-            Manjui components require minimal global CSS to work.
+            nalaui components require minimal global CSS to work.
         </p>
         <ul>
             <li>
-                <a href="https://github.com/christellvs/manjui/blob/main/stylesheets/variables.css" target="_blank">variables.css</a> includes the global CSS variables that support the Design System.
+                <a href="https://github.com/christellvs/nalaui/blob/main/stylesheets/variables.css" target="_blank">variables.css</a> includes the global CSS variables that support the Design System.
             </li>
             <li>
-                <a href="https://github.com/christellvs/manjui/blob/main/stylesheets/baseline.css" target="_blank">baseline.css</a> establishes the sensible baseline for component styles. Most notably, it sets the text color and styles on document root and includes a global <code>box-sizing: border-box</code> rule. It is strongly recommended to import it; however, if you find it causes conflicts with your existing application, you may customize it to your needs.
+                <a href="https://github.com/christellvs/nalaui/blob/main/stylesheets/baseline.css" target="_blank">baseline.css</a> establishes the sensible baseline for component styles. Most notably, it sets the text color and styles on document root and includes a global <code>box-sizing: border-box</code> rule. It is strongly recommended to import it; however, if you find it causes conflicts with your existing application, you may customize it to your needs.
             </li>
             <li>
                 <code>components.css</code> contains the scoped styles for bundled components. Importing it is required.
@@ -44,7 +44,7 @@
         <h4>Optional stylesheets</h4>
 
         <p>
-            Manjui also includes optional global styles referred to as "modules".
+            nalaui also includes optional global styles referred to as "modules".
             Those are more opinionated and include utility classes, heading styles, <code>&lt;article&gt;</code> content styles etc. You can import them all or selectively, depending on your application needs.
         </p>
 
@@ -67,7 +67,7 @@ export default {
 
         importIndividual() {
             return `
-import { Btn } from 'manjui';
+import { Btn } from 'nalaui';
 
 app.component('Btn', Btn);
 `.trim();
@@ -75,7 +75,7 @@ app.component('Btn', Btn);
 
         importAll() {
             return `
-import { components } from 'manjui';
+import { components } from 'nalaui';
 
 for (const [name, component] of Object.entries(components)) {
     app.component(name, component);
@@ -85,26 +85,26 @@ for (const [name, component] of Object.entries(components)) {
 
         importRequiredCss() {
             return `
-import 'manjui/stylesheets/variables.css';
-import 'manjui/stylesheets/baseline.css';
-import 'manjui/stylesheets/components.css';
+import 'nalaui/stylesheets/variables.css';
+import 'nalaui/stylesheets/baseline.css';
+import 'nalaui/stylesheets/components.css';
 `.trim();
         },
 
         importOptionalCss() {
             return `
-import 'manjui/stylesheets/modules/article.css';
-import 'manjui/stylesheets/modules/headings.css';
-import 'manjui/stylesheets/modules/kbd.css';
-import 'manjui/stylesheets/modules/transitions.css';
-import 'manjui/stylesheets/modules/utils.css';
+import 'nalaui/stylesheets/modules/article.css';
+import 'nalaui/stylesheets/modules/headings.css';
+import 'nalaui/stylesheets/modules/kbd.css';
+import 'nalaui/stylesheets/modules/transitions.css';
+import 'nalaui/stylesheets/modules/utils.css';
 `.trim();
         },
 
         importFullCss() {
             return `
-import 'manjui/stylesheets/full.css';
-import 'manjui/stylesheets/components.css';
+import 'nalaui/stylesheets/full.css';
+import 'nalaui/stylesheets/components.css';
 `.trim();
         }
 

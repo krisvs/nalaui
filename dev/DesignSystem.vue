@@ -5,7 +5,7 @@
             Every UI library needs a design system. A good design system ensures a consistent visual and behavioral experience, provides a coherent visual identity, and is minimalistic enough to be unobtrusive to end applications.
         </p>
         <p>
-            Manjui features a minimalistic design system based solely on CSS variables and some lightweight conventions. It is comprised of the following key aspects:
+            nalaui features a minimalistic design system based solely on CSS variables and some lightweight conventions. It is comprised of the following key aspects:
         </p>
         <ul>
             <li><a href="#spacing">Spacing</a></li>
@@ -37,12 +37,12 @@
 
         <h3 id="colors">Colors</h3>
         <p>
-            Manjui follows a simple yet efficient approach to manage dual-themed application colors scheme.
+            nalaui follows a simple yet efficient approach to manage dual-themed application colors scheme.
         </p>
 
         <h4>Color tokens</h4>
 
-        <p>Manjui employs layered approach to structure application colors:</p>
+        <p>nalaui employs layered approach to structure application colors:</p>
 
         <ul>
             <li>
@@ -95,7 +95,7 @@
 
         <h4>Semantic tokens</h4>
         <p>
-            Manjui defines the finite set of semantic tokens:
+            nalaui defines the finite set of semantic tokens:
         </p>
         <ul>
             <li>

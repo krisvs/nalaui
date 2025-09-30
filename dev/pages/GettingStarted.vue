@@ -18,7 +18,7 @@
                 <h3>NPM Package</h3>
                 <CodeBlock
                     language="bash"
-                    code="npm install manjui" />
+                    code="npm install nalaui" />
 
                 <h3>Local Development / Monorepo Usage</h3>
                 <p>For monorepo setups or local development, you can use a file reference in your <code>package.json</code>:</p>
@@ -132,40 +132,40 @@ import CodeBlock from '../components/CodeBlock.vue';
 
 const monorepoExample = `{
   "dependencies": {
-    "manjui": "file:../../libs/manjui"
+    "nalaui": "file:../../libs/nalaui"
   }
 }`;
 
-const importIndividual = `import { Btn } from 'manjui';
+const importIndividual = `import { Btn } from 'nalaui';
 
 app.component('Btn', Btn);`;
 
-const importAll = `import { components } from 'manjui';
+const importAll = `import { components } from 'nalaui';
 
 for (const [name, component] of Object.entries(components)) {
     app.component(name, component);
 }`;
 
-const importRequiredCss = `import 'manjui/stylesheets/variables.css';
-import 'manjui/stylesheets/baseline.css';
-import 'manjui/stylesheets/components.css';`;
+const importRequiredCss = `import 'nalaui/stylesheets/variables.css';
+import 'nalaui/stylesheets/baseline.css';
+import 'nalaui/stylesheets/components.css';`;
 
-const importOptionalCss = `import 'manjui/stylesheets/modules/article.css';
-import 'manjui/stylesheets/modules/headings.css';
-import 'manjui/stylesheets/modules/kbd.css';
-import 'manjui/stylesheets/modules/transitions.css';
-import 'manjui/stylesheets/modules/utils.css';`;
+const importOptionalCss = `import 'nalaui/stylesheets/modules/article.css';
+import 'nalaui/stylesheets/modules/headings.css';
+import 'nalaui/stylesheets/modules/kbd.css';
+import 'nalaui/stylesheets/modules/transitions.css';
+import 'nalaui/stylesheets/modules/utils.css';`;
 
-const importFullCss = `import 'manjui/stylesheets/full.css';
-import 'manjui/stylesheets/components.css';`;
+const importFullCss = `import 'nalaui/stylesheets/full.css';
+import 'nalaui/stylesheets/components.css';`;
 
 const completeExample = `import { createApp } from 'vue';
-import { components } from 'manjui';
+import { components } from 'nalaui';
 
 // Import required CSS
-import 'manjui/stylesheets/variables.css';
-import 'manjui/stylesheets/baseline.css';
-import 'manjui/stylesheets/components.css';
+import 'nalaui/stylesheets/variables.css';
+import 'nalaui/stylesheets/baseline.css';
+import 'nalaui/stylesheets/components.css';
 
 import App from './App.vue';
 
