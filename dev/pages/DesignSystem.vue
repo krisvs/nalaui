@@ -502,6 +502,12 @@ const colorUsageExample = `/* Using color tokens in your CSS */
     margin: var(--sp4) 0;
 }
 
+@media (min-width: 1024px) {
+    .ConventionsGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .Convention-card {
     padding: var(--sp4);
     background: var(--color-base-1);
