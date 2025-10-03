@@ -153,11 +153,7 @@ export default {
     color: var(--Btn-text-color);
     outline: 2px solid var(--Btn-outline-color-effective);
 
-    background: radial-gradient(
-        120% 150% at 80% 0%,
-        var(--Btn-surface-top),
-        var(--Btn-surface-bottom)
-    );
+    background: var(--Btn-surface-bottom);
     background-clip: padding-box;
 
     transition: color .3s, outline .3s, filter .3s, border-radius .3s;
