@@ -17,7 +17,7 @@
     --border-radius: var(--sp);
     --border-radius-round: var(--sp2);
 
-    --input-size: var(--sp4);
+    --input-size: var(--sp5-5);
     --input-size-small: var(--sp3);
     --input-size-smaller: var(--sp2);
     --input-size-large: var(--sp5);
