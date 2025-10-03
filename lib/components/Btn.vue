@@ -206,7 +206,7 @@ export default {
 }
 
 .Btn-round {
-    --Btn-border-radius: var(--border-radius-round);
+    --Btn-border-radius: var(--sp5);
 }
 
 .Btn-disabled {
