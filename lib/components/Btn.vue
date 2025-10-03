@@ -321,42 +321,56 @@ export default {
 
 .Btn-link-default {
     --Btn-text-color: var(--color-default);
+    --Btn-surface-top: var(--color-default-1);
+    --Btn-surface-bottom: var(--color-default-2);
     --Btn-outline-color: var(--color-default-outline);
     --Btn-outline-color-focus: var(--color-default-focus);
 }
 
 .Btn-link-primary {
     --Btn-text-color: var(--color-primary);
+    --Btn-surface-top: var(--color-primary-0);
+    --Btn-surface-bottom: var(--color-primary-1);
     --Btn-outline-color: var(--color-primary-outline);
     --Btn-outline-color-focus: var(--color-primary-focus);
 }
 
 .Btn-link-secondary {
     --Btn-text-color: var(--color-secondary);
+    --Btn-surface-top: var(--color-secondary-0);
+    --Btn-surface-bottom: var(--color-secondary-1);
     --Btn-outline-color: var(--color-secondary-outline);
     --Btn-outline-color-focus: var(--color-secondary-focus);
 }
 
 .Btn-link-tertiary {
     --Btn-text-color: var(--color-tertiary);
+    --Btn-surface-top: var(--color-tertiary-0);
+    --Btn-surface-bottom: var(--color-tertiary-1);
     --Btn-outline-color: var(--color-tertiary-outline);
     --Btn-outline-color-focus: var(--color-tertiary-focus);
 }
 
 .Btn-link-success {
     --Btn-text-color: var(--color-success);
+    --Btn-surface-top: var(--color-success-0);
+    --Btn-surface-bottom: var(--color-success-1);
     --Btn-outline-color: var(--color-success-outline);
     --Btn-outline-color-focus: var(--color-success-focus);
 }
 
 .Btn-link-warning {
     --Btn-text-color: var(--color-warning);
+    --Btn-surface-top: var(--color-warning-0);
+    --Btn-surface-bottom: var(--color-warning-1);
     --Btn-outline-color: var(--color-warning-outline);
     --Btn-outline-color-focus: var(--color-warning-focus);
 }
 
 .Btn-link-danger {
     --Btn-text-color: var(--color-danger);
+    --Btn-surface-top: var(--color-danger-0);
+    --Btn-surface-bottom: var(--color-danger-1);
     --Btn-outline-color: var(--color-danger-outline);
     --Btn-outline-color-focus: var(--color-danger-focus);
 }
