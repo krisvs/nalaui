@@ -156,23 +156,29 @@
                 <ComponentDemo
                     id="btn"
                     title="Button"
-                    description="Versatile button component with multiple variants and states."
+                    description="Versatile button component with multiple color variants (primary, secondary, tertiary, default, success, warning, danger) and states."
                     :code="btnCode">
                     <VGroup gap="3" class="demo-container">
                         <HGroup gap="2">
-                            <Btn variant="primary">Primary</Btn>
-                            <Btn variant="secondary">Secondary</Btn>
-                            <Btn variant="default">Default</Btn>
+                            <Btn kind="primary">Primary</Btn>
+                            <Btn kind="secondary">Secondary</Btn>
+                            <Btn kind="tertiary">Tertiary</Btn>
+                            <Btn kind="default">Default</Btn>
                         </HGroup>
                         <HGroup gap="2">
-                            <Btn variant="primary" size="small">Small</Btn>
-                            <Btn variant="primary">Default</Btn>
-                            <Btn variant="primary" size="large">Large</Btn>
+                            <Btn kind="success">Success</Btn>
+                            <Btn kind="warning">Warning</Btn>
+                            <Btn kind="danger">Danger</Btn>
                         </HGroup>
                         <HGroup gap="2">
-                            <Btn variant="primary" :disabled="true">Disabled</Btn>
-                            <Btn variant="primary" outline>Outline</Btn>
-                            <Btn variant="primary" round>Round</Btn>
+                            <Btn kind="primary" size="small">Small</Btn>
+                            <Btn kind="primary">Default</Btn>
+                            <Btn kind="primary" size="large">Large</Btn>
+                        </HGroup>
+                        <HGroup gap="2">
+                            <Btn kind="primary" :disabled="true">Disabled</Btn>
+                            <Btn kind="primary" outline>Outline</Btn>
+                            <Btn kind="primary" round>Round</Btn>
                         </HGroup>
                     </VGroup>
                 </ComponentDemo>
@@ -313,19 +319,25 @@ const typographyVariablesCode = `<!-- Font Sizes -->
 
 const btnCode = `<VGroup gap="3">
   <HGroup gap="2">
-    <Btn variant="primary">Primary</Btn>
-    <Btn variant="secondary">Secondary</Btn>
-    <Btn variant="default">Default</Btn>
+    <Btn kind="primary">Primary</Btn>
+    <Btn kind="secondary">Secondary</Btn>
+    <Btn kind="tertiary">Tertiary</Btn>
+    <Btn kind="default">Default</Btn>
   </HGroup>
   <HGroup gap="2">
-    <Btn variant="primary" size="small">Small</Btn>
-    <Btn variant="primary">Default</Btn>
-    <Btn variant="primary" size="large">Large</Btn>
+    <Btn kind="success">Success</Btn>
+    <Btn kind="warning">Warning</Btn>
+    <Btn kind="danger">Danger</Btn>
   </HGroup>
   <HGroup gap="2">
-    <Btn variant="primary" :disabled="true">Disabled</Btn>
-    <Btn variant="primary" outline>Outline</Btn>
-    <Btn variant="primary" round>Round</Btn>
+    <Btn kind="primary" size="small">Small</Btn>
+    <Btn kind="primary">Default</Btn>
+    <Btn kind="primary" size="large">Large</Btn>
+  </HGroup>
+  <HGroup gap="2">
+    <Btn kind="primary" :disabled="true">Disabled</Btn>
+    <Btn kind="primary" outline>Outline</Btn>
+    <Btn kind="primary" round>Round</Btn>
   </HGroup>
 </VGroup>`;
 
