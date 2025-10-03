@@ -108,6 +108,37 @@
                         <Link href="#" variant="secondary">Secondary link</Link>
                     </VGroup>
                 </ComponentDemo>
+
+                <ComponentDemo
+                    id="typography-variables"
+                    title="Typography Variables"
+                    description="CSS variables for font sizes, weights, and families that can be used in custom styles."
+                    :code="typographyVariablesCode">
+                    <VGroup gap="4" class="demo-container">
+                        <VGroup gap="2">
+                            <h4>Font Sizes</h4>
+                            <div style="font-size: var(--font-size-headline)">The fox jumped over the lazy dog</div>
+                            <div style="font-size: var(--font-size-larger)">The fox jumped over the lazy dog</div>
+                            <div style="font-size: var(--font-size-large)">The fox jumped over the lazy dog</div>
+                            <div style="font-size: var(--font-size)">The fox jumped over the lazy dog</div>
+                            <div style="font-size: var(--font-size-small)">The fox jumped over the lazy dog</div>
+                            <div style="font-size: var(--font-size-smaller)">The fox jumped over the lazy dog</div>
+                        </VGroup>
+
+                        <VGroup gap="2">
+                            <h4>Font Weights</h4>
+                            <div style="font-weight: var(--font-weight)">The fox jumped over the lazy dog</div>
+                            <div style="font-weight: var(--font-weight-bold)">The fox jumped over the lazy dog</div>
+                            <div style="font-weight: var(--font-weight-boldest)">The fox jumped over the lazy dog</div>
+                        </VGroup>
+
+                        <VGroup gap="2">
+                            <h4>Font Families</h4>
+                            <div style="font-family: var(--font-main)">The fox jumped over the lazy dog</div>
+                            <div style="font-family: var(--font-monospace)">The fox jumped over the lazy dog</div>
+                        </VGroup>
+                    </VGroup>
+                </ComponentDemo>
             </section>
 
             <!-- Form Components -->
@@ -254,6 +285,23 @@ const linkCode = `<VGroup gap="2">
   <Link href="#" variant="primary">Primary link</Link>
   <Link href="#" variant="secondary">Secondary link</Link>
 </VGroup>`;
+
+const typographyVariablesCode = `<!-- Font Sizes -->
+<div style="font-size: var(--font-size-headline)">Headline (42px)</div>
+<div style="font-size: var(--font-size-larger)">Larger (20px)</div>
+<div style="font-size: var(--font-size-large)">Large (18px)</div>
+<div style="font-size: var(--font-size)">Default (16px)</div>
+<div style="font-size: var(--font-size-small)">Small (14px)</div>
+<div style="font-size: var(--font-size-smaller)">Smaller (12px)</div>
+
+<!-- Font Weights -->
+<div style="font-weight: var(--font-weight)">Regular (400)</div>
+<div style="font-weight: var(--font-weight-bold)">Bold (500)</div>
+<div style="font-weight: var(--font-weight-boldest)">Boldest (800)</div>
+
+<!-- Font Families -->
+<div style="font-family: var(--font-main)">Main Font</div>
+<div style="font-family: var(--font-monospace)">Monospace Font</div>`;
 
 const btnCode = `<VGroup gap="3">
   <HGroup gap="2">
