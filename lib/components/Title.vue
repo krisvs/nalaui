@@ -33,7 +33,9 @@ export default {
 .Title-align--center { text-align: center; }
 .Title-align--end { text-align: end; }
 
-.Title-kind--default { color: var(--color-default); }
+.Title-kind--default { color: var(--color-default);
+font-size: var(--h2-font-size);
+}
 .Title-kind--primary { color: var(--color-primary); }
 .Title-kind--secondary { color: var(--color-secondary); }
 .Title-kind--tertiary { color: var(--color-tertiary); }

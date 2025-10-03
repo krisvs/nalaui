@@ -64,48 +64,52 @@
                 <ComponentDemo
                     id="title"
                     title="Title"
-                    description="Main heading component with size variants."
+                    description="Main heading component with kind variants for different colors."
                     :code="titleCode">
                     <VGroup gap="2" class="demo-container">
-                        <Title size="large">Large Title</Title>
-                        <Title>Default Title</Title>
-                        <Title size="small">Small Title</Title>
+                        <Title title="The fox jumped over the lazy dog" kind="default" />
+                        <Title title="The fox jumped over the lazy dog" kind="primary" />
+                        <Title title="The fox jumped over the lazy dog" kind="secondary" />
+                        <Title title="The fox jumped over the lazy dog" kind="tertiary" />
                     </VGroup>
                 </ComponentDemo>
 
                 <ComponentDemo
                     id="subtitle"
                     title="Subtitle"
-                    description="Secondary heading component."
+                    description="Secondary heading component with kind variants for different colors."
                     :code="subtitleCode">
                     <VGroup gap="2" class="demo-container">
-                        <Title>Main Title</Title>
-                        <Subtitle>This is a subtitle</Subtitle>
-                        <Text>Some content follows the subtitle</Text>
+                        <Subtitle subtitle="The fox jumped over the lazy dog" kind="default" />
+                        <Subtitle subtitle="The fox jumped over the lazy dog" kind="primary" />
+                        <Subtitle subtitle="The fox jumped over the lazy dog" kind="secondary" />
+                        <Subtitle subtitle="The fox jumped over the lazy dog" kind="tertiary" />
                     </VGroup>
                 </ComponentDemo>
 
                 <ComponentDemo
                     id="text"
                     title="Text"
-                    description="Standard text component with size variants."
+                    description="Standard text component with kind variants for different colors."
                     :code="textCode">
                     <VGroup gap="2" class="demo-container">
-                        <Text size="large">Large text</Text>
-                        <Text>Default text</Text>
-                        <Text size="small">Small text</Text>
+                        <Text text="The fox jumped over the lazy dog" kind="default" />
+                        <Text text="The fox jumped over the lazy dog" kind="primary" />
+                        <Text text="The fox jumped over the lazy dog" kind="secondary" />
+                        <Text text="The fox jumped over the lazy dog" kind="tertiary" />
                     </VGroup>
                 </ComponentDemo>
 
                 <ComponentDemo
                     id="link"
                     title="Link"
-                    description="Link component with various styles."
+                    description="Link component with kindHover variants for different hover colors."
                     :code="linkCode">
                     <VGroup gap="2" class="demo-container">
-                        <Link href="#">Default link</Link>
-                        <Link href="#" variant="primary">Primary link</Link>
-                        <Link href="#" variant="secondary">Secondary link</Link>
+                        <Link href="#" label="The fox jumped over the lazy dog" kindHover="default" />
+                        <Link href="#" label="The fox jumped over the lazy dog" kindHover="primary" />
+                        <Link href="#" label="The fox jumped over the lazy dog" kindHover="secondary" />
+                        <Link href="#" label="The fox jumped over the lazy dog" kindHover="tertiary" />
                     </VGroup>
                 </ComponentDemo>
 
@@ -263,27 +267,31 @@ const hstackCode = `<HStack>
 </HStack>`;
 
 const titleCode = `<VGroup gap="2">
-  <Title size="large">Large Title</Title>
-  <Title>Default Title</Title>
-  <Title size="small">Small Title</Title>
+  <Title title="The fox jumped over the lazy dog" kind="default" />
+  <Title title="The fox jumped over the lazy dog" kind="primary" />
+  <Title title="The fox jumped over the lazy dog" kind="secondary" />
+  <Title title="The fox jumped over the lazy dog" kind="tertiary" />
 </VGroup>`;
 
 const subtitleCode = `<VGroup gap="2">
-  <Title>Main Title</Title>
-  <Subtitle>This is a subtitle</Subtitle>
-  <Text>Some content follows the subtitle</Text>
+  <Subtitle subtitle="The fox jumped over the lazy dog" kind="default" />
+  <Subtitle subtitle="The fox jumped over the lazy dog" kind="primary" />
+  <Subtitle subtitle="The fox jumped over the lazy dog" kind="secondary" />
+  <Subtitle subtitle="The fox jumped over the lazy dog" kind="tertiary" />
 </VGroup>`;
 
 const textCode = `<VGroup gap="2">
-  <Text size="large">Large text</Text>
-  <Text>Default text</Text>
-  <Text size="small">Small text</Text>
+  <Text text="The fox jumped over the lazy dog" kind="default" />
+  <Text text="The fox jumped over the lazy dog" kind="primary" />
+  <Text text="The fox jumped over the lazy dog" kind="secondary" />
+  <Text text="The fox jumped over the lazy dog" kind="tertiary" />
 </VGroup>`;
 
 const linkCode = `<VGroup gap="2">
-  <Link href="#">Default link</Link>
-  <Link href="#" variant="primary">Primary link</Link>
-  <Link href="#" variant="secondary">Secondary link</Link>
+  <Link href="#" label="The fox jumped over the lazy dog" kindHover="default" />
+  <Link href="#" label="The fox jumped over the lazy dog" kindHover="primary" />
+  <Link href="#" label="The fox jumped over the lazy dog" kindHover="secondary" />
+  <Link href="#" label="The fox jumped over the lazy dog" kindHover="tertiary" />
 </VGroup>`;
 
 const typographyVariablesCode = `<!-- Font Sizes -->
@@ -383,6 +391,10 @@ const circleCode = `<HGroup gap="3">
     color: var(--color-text-0);
     border-bottom: 2px solid var(--color-base-2);
     padding-bottom: var(--sp2);
+    background: linear-gradient(135deg, var(--color-primary-3), var(--color-secondary-3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .Section-description {

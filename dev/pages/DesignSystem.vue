@@ -343,6 +343,10 @@ const colorUsageExample = `/* Using color tokens in your CSS */
     color: var(--color-text-0);
     border-bottom: 2px solid var(--color-base-2);
     padding-bottom: var(--sp2);
+    background: linear-gradient(135deg, var(--color-primary-3), var(--color-secondary-3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .Section p {
