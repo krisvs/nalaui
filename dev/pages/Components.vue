@@ -159,26 +159,62 @@
                     description="Versatile button component with multiple color variants (primary, secondary, tertiary, default, success, warning, danger) and states."
                     :code="btnCode">
                     <VGroup gap="3" class="demo-container">
-                        <HGroup gap="2">
-                            <Btn kind="primary">Primary</Btn>
-                            <Btn kind="secondary">Secondary</Btn>
-                            <Btn kind="tertiary">Tertiary</Btn>
-                            <Btn kind="default">Default</Btn>
+                        <!-- State Controls -->
+                        <HGroup gap="3" style="flex-wrap: wrap; align-items: center;">
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="checkbox" v-model="btnDisabled">
+                                <span>Disabled</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="checkbox" v-model="btnFocus">
+                                <span>Focus</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="checkbox" v-model="btnHover">
+                                <span>Hover</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="checkbox" v-model="btnActive">
+                                <span>Active</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="checkbox" v-model="btnRound">
+                                <span>Round</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="checkbox" v-model="btnOutline">
+                                <span>Outline</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="checkbox" v-model="btnSmall">
+                                <span>Small</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="checkbox" v-model="btnIcon">
+                                <span>Icon</span>
+                            </label>
                         </HGroup>
-                        <HGroup gap="2">
-                            <Btn kind="success">Success</Btn>
-                            <Btn kind="warning">Warning</Btn>
-                            <Btn kind="danger">Danger</Btn>
+
+                        <!-- All Color Variants -->
+                        <HGroup gap="2" style="flex-wrap: wrap;">
+                            <Btn kind="default" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Default</Btn>
+                            <Btn kind="primary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Primary</Btn>
+                            <Btn kind="secondary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Secondary</Btn>
+                            <Btn kind="tertiary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Tertiary</Btn>
+                            <Btn kind="success" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Success</Btn>
+                            <Btn kind="warning" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Warning</Btn>
+                            <Btn kind="danger" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Danger</Btn>
                         </HGroup>
-                        <HGroup gap="2">
-                            <Btn kind="primary" size="small">Small</Btn>
-                            <Btn kind="primary">Default</Btn>
-                            <Btn kind="primary" size="large">Large</Btn>
-                        </HGroup>
-                        <HGroup gap="2">
-                            <Btn kind="primary" :disabled="true">Disabled</Btn>
-                            <Btn kind="primary" outline>Outline</Btn>
-                            <Btn kind="primary" round>Round</Btn>
+
+                        <!-- Link-style Variants -->
+                        <HGroup gap="2" style="flex-wrap: wrap;">
+                            <Btn kind="link-default" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Default</Btn>
+                            <Btn kind="link-primary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Primary</Btn>
+                            <Btn kind="link-secondary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Secondary</Btn>
+                            <Btn kind="link-tertiary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Tertiary</Btn>
+                            <Btn kind="link-success" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Success</Btn>
+                            <Btn kind="link-warning" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Warning</Btn>
+                            <Btn kind="link-danger" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Danger</Btn>
                         </HGroup>
                     </VGroup>
                 </ComponentDemo>
@@ -252,6 +288,16 @@ import ComponentDemo from '../components/ComponentDemo.vue';
 
 const inputValue1 = ref('');
 const inputValue2 = ref('');
+
+// Button demo state
+const btnDisabled = ref(false);
+const btnFocus = ref(false);
+const btnHover = ref(false);
+const btnActive = ref(false);
+const btnRound = ref(false);
+const btnOutline = ref(false);
+const btnSmall = ref(false);
+const btnIcon = ref(false);
 
 // Code examples
 const vgroupCode = `<VGroup gap="2">
