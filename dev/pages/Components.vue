@@ -190,31 +190,31 @@
                                 <span>Small</span>
                             </label>
                             <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
-                                <input type="checkbox" v-model="btnIcon">
+                                <input type="checkbox" v-model="btnIcon" true-value="fas fa-star" false-value="">
                                 <span>Icon</span>
                             </label>
                         </HGroup>
 
                         <!-- All Color Variants -->
                         <HGroup gap="2" style="flex-wrap: wrap;">
-                            <Btn kind="default" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Default</Btn>
-                            <Btn kind="primary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Primary</Btn>
-                            <Btn kind="secondary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Secondary</Btn>
-                            <Btn kind="tertiary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Tertiary</Btn>
-                            <Btn kind="success" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Success</Btn>
-                            <Btn kind="warning" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Warning</Btn>
-                            <Btn kind="danger" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Danger</Btn>
+                            <Btn kind="default" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Default</Btn>
+                            <Btn kind="primary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Primary</Btn>
+                            <Btn kind="secondary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Secondary</Btn>
+                            <Btn kind="tertiary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Tertiary</Btn>
+                            <Btn kind="success" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Success</Btn>
+                            <Btn kind="warning" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Warning</Btn>
+                            <Btn kind="danger" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Danger</Btn>
                         </HGroup>
 
                         <!-- Link-style Variants -->
                         <HGroup gap="2" style="flex-wrap: wrap;">
-                            <Btn kind="link-default" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Default</Btn>
-                            <Btn kind="link-primary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Primary</Btn>
-                            <Btn kind="link-secondary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Secondary</Btn>
-                            <Btn kind="link-tertiary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Tertiary</Btn>
-                            <Btn kind="link-success" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Success</Btn>
-                            <Btn kind="link-warning" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Warning</Btn>
-                            <Btn kind="link-danger" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive">Danger</Btn>
+                            <Btn kind="link-default" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Default</Btn>
+                            <Btn kind="link-primary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Primary</Btn>
+                            <Btn kind="link-secondary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Secondary</Btn>
+                            <Btn kind="link-tertiary" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Tertiary</Btn>
+                            <Btn kind="link-success" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Success</Btn>
+                            <Btn kind="link-warning" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Warning</Btn>
+                            <Btn kind="link-danger" :disabled="btnDisabled" :round="btnRound" :outline="btnOutline" :size="btnSmall ? 'small' : undefined" :pseudo-focus="btnFocus" :pseudo-hover="btnHover" :pseudo-active="btnActive" :icon="btnIcon">Danger</Btn>
                         </HGroup>
                     </VGroup>
                 </ComponentDemo>
